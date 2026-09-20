@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dr. Tahira Tanweer Dental Practice</title>
+<meta name="description" content="Book a dental appointment, explore services, get emergency tooth advice and contact Dr. Tahira Tanweer Dental Practice.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=Figtree:wght@400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400..700&display=swap" rel="stylesheet">
+<style>
+:root{
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light;
+  --bg:#F1F7F6; --surface:#FFFFFF; --surface2:#E4F0EE; --ink:#10302E; --muted:#4A6462; --line:#D2E1DE;
+  --brand:#0B6B63; --on-brand:#FFFFFF; --brand-soft:#D3EDE9;
+  --hero:#0C4E49; --on-hero:#FFFFFF;
+  --gum:#B5304C; --on-gum:#FFFFFF; --gum-soft:#F9DDE3;
+  --star:#E3A008; --ok:#1B7F4B; --ok-soft:#D8F0E1; --warn:#7A5300; --warn-soft:#FBEBC8;
+  --focus:#0B6B63; --shadow:0 10px 30px rgba(12,78,73,.16);
+  --fen:'Bricolage Grotesque','Trebuchet MS','Segoe UI',system-ui,sans-serif;
+  --fd:'Bricolage Grotesque','Trebuchet MS','Segoe UI',system-ui,sans-serif;
+  --fb:Figtree,'Segoe UI',system-ui,-apple-system,Roboto,'Helvetica Neue',sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#0B1918; --surface:#132927; --surface2:#1A3532; --ink:#E7F3F1; --muted:#A3BDB9; --line:#264542;
+    --brand:#4FCBBE; --on-brand:#06211E; --brand-soft:#173C38;
+    --hero:#0F3D39; --on-hero:#FFFFFF;
+    --gum:#F27C93; --on-gum:#2C0A12; --gum-soft:#3A1A22;
+    --star:#F2B928; --ok:#63D394; --ok-soft:#153A29; --warn:#F2C868; --warn-soft:#3B2E10;
+    --focus:#4FCBBE; --shadow:0 10px 30px rgba(0,0,0,.45);
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#0B1918; --surface:#132927; --surface2:#1A3532; --ink:#E7F3F1; --muted:#A3BDB9; --line:#264542;
+  --brand:#4FCBBE; --on-brand:#06211E; --brand-soft:#173C38;
+  --hero:#0F3D39; --on-hero:#FFFFFF;
+  --gum:#F27C93; --on-gum:#2C0A12; --gum-soft:#3A1A22;
+  --star:#F2B928; --ok:#63D394; --ok-soft:#153A29; --warn:#F2C868; --warn-soft:#3B2E10;
+  --focus:#4FCBBE; --shadow:0 10px 30px rgba(0,0,0,.45);
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px);-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.55 var(--fb);-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--fd);line-height:1.15;margin:0;letter-spacing:-.01em}
+h1{font-size:clamp(1.7rem,5.5vw,2.4rem);font-weight:700}
+h2{font-size:1.3rem;font-weight:700}
+h3{font-size:1.02rem;font-weight:600}
+h1:focus{outline:none}
+p{margin:0}
+button,input,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+a{color:var(--brand)}
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+.hero :focus-visible{outline-color:#fff}
+.skip{position:absolute;inset-inline-start:-999px;top:0}
+.skip:focus{inset-inline-start:12px;top:12px;background:var(--brand);color:var(--on-brand);padding:8px 12px;border-radius:8px;z-index:100}
+.ic{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.ic.fill{fill:currentColor;stroke:none}
+[dir="rtl"] .ic.flip{transform:scaleX(-1)}
+bdi{unicode-bidi:isolate}
+
+/* Urdu */
+html[lang="ur"]{
+  --fd:'Noto Nastaliq Urdu','Noto Naskh Arabic','Segoe UI',Tahoma,sans-serif;
+  --fb:'Noto Nastaliq Urdu','Noto Naskh Arabic','Segoe UI',Tahoma,sans-serif;
+}
+html[lang="ur"] body{line-height:2.15}
+html[lang="ur"] *{letter-spacing:0!important}
+html[lang="ur"] h1,html[lang="ur"] h2,html[lang="ur"] h3{line-height:1.95}
+html[lang="ur"] h1{font-size:clamp(1.5rem,5vw,2.1rem)}
+html[lang="ur"] h2{font-size:1.2rem}
+html[lang="ur"] .hero h1{font-size:clamp(1.7rem,6.5vw,2.5rem);line-height:2.05;max-width:16ch}
+html[lang="ur"] .tab{font-size:.78rem;line-height:1.8}
+html[lang="ur"] .hint,html[lang="ur"] .rp{line-height:2}
+html[lang="ur"] .btn,html[lang="ur"] .chip,html[lang="ur"] .slot,html[lang="ur"] .pill{line-height:1.9}
+html[lang="ur"] .btn{padding-top:4px;padding-bottom:4px}
+
+/* shell */
+.shell{max-width:1080px;margin:0 auto}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 16px;background:var(--bg)}
+.brand{display:flex;align-items:center;gap:10px;background:none;border:0;padding:4px;border-radius:12px;text-align:start}
+.logo{width:40px;height:40px;border-radius:13px;background:var(--brand);color:var(--on-brand);display:grid;place-items:center;flex:none}
+.logo svg{width:23px;height:23px;fill:currentColor}
+.brand b{display:block;font:700 1.02rem/1.2 var(--fd)}
+.brand small{color:var(--muted);font-size:.8rem}
+.tools{display:flex;align-items:center;gap:8px}
+.iconbtn{width:44px;height:44px;border-radius:14px;border:1px solid var(--line);background:var(--surface);display:grid;place-items:center;flex:none}
+.langbtn{min-height:44px;padding:0 14px;border-radius:14px;border:1px solid var(--line);background:var(--surface);font-weight:700;line-height:1.6}
+.tabs{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:repeat(5,1fr);background:var(--surface);border-top:1px solid var(--line);padding:6px 6px calc(6px + env(safe-area-inset-bottom,0px))}
+.tab{display:flex;flex-direction:column;align-items:center;gap:2px;padding:4px 2px;border:0;background:none;color:var(--muted);font-size:.72rem;font-weight:600;border-radius:14px}
+.tab .ic{width:23px;height:23px}
+.ib{display:grid;place-items:center;width:50px;height:30px;border-radius:15px;transition:background .2s}
+.tab[aria-current=page]{color:var(--brand)}
+.tab[aria-current=page] .ib{background:var(--brand-soft)}
+.tab.cta{color:var(--ink)}
+.tab.cta .ib{background:var(--brand);color:var(--on-brand)}
+.tab.cta[aria-current=page]{color:var(--brand)}
+#app{padding:4px 16px 120px;outline:none}
+.view.enter{animation:enter .25s ease}
+@keyframes enter{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+@media (min-width:900px){
+  .shell{display:grid;grid-template-columns:210px minmax(0,1fr);grid-template-areas:"bar bar" "tabs main";column-gap:28px;padding:0 20px}
+  .bar{grid-area:bar;padding-left:0;padding-right:0}
+  .tabs{grid-area:tabs;position:sticky;left:auto;right:auto;bottom:auto;top:calc(72px + env(safe-area-inset-top,0px));align-self:start;display:flex;flex-direction:column;gap:4px;border:0;background:transparent;padding:0}
+  .tab{flex-direction:row;gap:12px;font-size:.98rem;padding:10px 12px;justify-content:flex-start}
+  html[lang="ur"] .tab{font-size:.92rem}
+  .ib,.tab.cta .ib{width:auto;height:auto;background:none;color:inherit}
+  .tab.cta{background:var(--brand);color:var(--on-brand)}
+  .tab.cta[aria-current=page]{color:var(--on-brand)}
+  .tab[aria-current=page]{background:var(--brand-soft)}
+  .tab.cta[aria-current=page]{background:var(--brand)}
+  #app{grid-area:main;padding:4px 0 60px}
+}
+
+/* buttons and forms */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 18px;border-radius:14px;border:1.5px solid transparent;font-weight:700;text-decoration:none;background:var(--brand);color:var(--on-brand)}
+.btn.ghost{background:transparent;border-color:var(--line);color:var(--ink)}
+.btn.soft{background:var(--brand-soft);color:var(--brand)}
+.btn.light{background:#fff;color:#0C4E49}
+.btn.line{background:transparent;border-color:rgba(255,255,255,.6);color:#fff}
+.btn.danger{background:transparent;border-color:var(--gum);color:var(--gum)}
+.btn.gum{background:var(--gum);color:var(--on-gum)}
+.btn.sm{min-height:40px;padding:0 14px;font-size:.92rem;border-radius:12px}
+.btn.block{width:100%}
+.btn[disabled]{opacity:.45;cursor:not-allowed}
+.link{background:none;border:0;color:var(--brand);font-weight:700;text-decoration:underline;padding:6px}
+.field{display:grid;gap:6px;margin-bottom:14px}
+label,.lbl{font-weight:600;font-size:.95rem}
+input[type=text],input[type=tel],textarea{width:100%;min-height:48px;padding:10px 14px;border-radius:12px;border:1.5px solid var(--line);background:var(--surface)}
+textarea{min-height:92px;resize:vertical}
+input::placeholder,textarea::placeholder{color:var(--muted);opacity:.8}
+.hint{color:var(--muted);font-size:.9rem}
+.err{color:var(--gum);font-weight:600;font-size:.9rem}
+.seg{display:inline-grid;grid-auto-flow:column;gap:4px;padding:4px;border-radius:14px;background:var(--surface2)}
+.seg button{border:0;background:none;padding:9px 14px;border-radius:10px;font-weight:600;color:var(--muted)}
+.seg button[aria-pressed=true]{background:var(--surface);color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.18)}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:4px 0 10px;scrollbar-width:none}
+.chips.wrap{flex-wrap:wrap;overflow:visible;padding-bottom:0}
+.chip{flex:0 0 auto;padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surface);font-weight:600;font-size:.92rem}
+.chip[aria-pressed=true]{background:var(--brand-soft);border-color:var(--brand);color:var(--brand)}
+
+/* hero + quick booking */
+.hero{position:relative;overflow:hidden;background:var(--hero);color:var(--on-hero);border-radius:28px;padding:26px 22px 78px;margin-top:4px}
+.hero h1{font-size:clamp(2rem,7vw,3rem);max-width:14ch;position:relative}
+.hero p{margin-top:10px;color:rgba(255,255,255,.86);max-width:34ch;position:relative}
+.hero .wm{position:absolute;inset-inline-end:-30px;bottom:-40px;width:250px;height:250px;fill:none;stroke:rgba(255,255,255,.16);stroke-width:.6;stroke-linejoin:round;transform:rotate(-14deg);pointer-events:none}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.3}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;position:relative}
+.pill{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border-radius:999px;background:rgba(255,255,255,.15);font-size:.9rem;font-weight:600}
+.pill .ic{width:16px;height:16px;color:#FFD766}
+.pill .dot{width:8px;height:8px;border-radius:50%;background:#7EE2A8}
+.pill .dot.off{background:#F5A3B1}
+.hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px;position:relative}
+.quick{position:relative;margin:-52px 12px 0;background:var(--surface);border-radius:22px;padding:16px;box-shadow:var(--shadow);border:1px solid var(--line)}
+.dayrow{display:flex;gap:8px;overflow-x:auto;padding:10px 2px;scrollbar-width:none}
+.day{flex:0 0 auto;min-width:58px;display:flex;flex-direction:column;align-items:center;padding:8px 6px;border:1px solid var(--line);background:var(--surface);border-radius:14px}
+.day .dw{font-size:.74rem;color:var(--muted);font-weight:600;line-height:1.8}
+.day .dn{font:700 1.2rem/1.2 var(--fen)}
+.day[aria-pressed=true]{background:var(--brand);border-color:var(--brand);color:var(--on-brand)}
+.day[aria-pressed=true] .dw{color:inherit;opacity:.9}
+.day:disabled{opacity:.4;cursor:not-allowed}
+.slots{display:grid;grid-template-columns:repeat(auto-fill,minmax(96px,1fr));gap:8px}
+.slot{min-height:44px;border-radius:12px;border:1px solid var(--line);background:var(--surface2);font-weight:600}
+.slot[aria-pressed=true]{background:var(--brand);color:var(--on-brand);border-color:var(--brand)}
+.mt{margin-top:12px}
+.mt2{margin-top:20px}
+
+/* sections and lists */
+.sec{margin-top:28px}
+.sechead{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:12px}
+.pgt{margin:10px 0 14px}
+.tiles{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:22px}
+@media (min-width:700px){.tiles{grid-template-columns:repeat(4,1fr)}}
+.tile{display:flex;flex-direction:column;align-items:flex-start;gap:10px;padding:14px;border-radius:18px;background:var(--surface);border:1px solid var(--line);text-align:start;text-decoration:none;color:var(--ink);font-weight:600}
+.bub{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:var(--brand-soft);color:var(--brand);flex:none}
+.tile.em .bub,.bub.em{background:var(--gum-soft);color:var(--gum)}
+.list{background:var(--surface);border:1px solid var(--line);border-radius:20px;overflow:hidden}
+.row{display:flex;align-items:center;gap:12px;padding:14px 16px;border-bottom:1px solid var(--line);width:100%;background:none;border-left:0;border-right:0;border-top:0;text-align:start;text-decoration:none;color:var(--ink)}
+.list>.row:last-child{border-bottom:0}
+.row .grow{flex:1;min-width:0}
+.row p{color:var(--muted);font-size:.92rem}
+.row p.price{color:var(--ink);font-weight:700;font-size:.95rem;margin-top:2px}
+.price{font:700 1rem var(--fen);white-space:nowrap}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:16px}
+.card .doc{margin-bottom:12px}
+.card .avatar{width:64px;height:64px;border-radius:20px;font-size:1.5rem}
+.rt{display:block;font:600 1.02rem/1.25 var(--fd)}
+.rp{display:block;color:var(--muted);font-size:.92rem}
+html[lang="ur"] .rt{line-height:1.95}
+.empty{padding:22px;text-align:center;color:var(--muted)}
+.gt{font-weight:600;color:var(--muted);padding:16px 4px 8px}
+.pick{display:flex;align-items:center;gap:12px;width:100%;text-align:start;padding:14px 16px;background:none;border:0;border-bottom:1px solid var(--line)}
+.list>.pick:last-child{border-bottom:0}
+.pick[aria-pressed=true]{background:var(--brand-soft)}
+.tick{width:24px;height:24px;border-radius:50%;border:2px solid var(--line);display:grid;place-items:center;flex:none}
+.tick .ic{width:14px;height:14px;stroke-width:3;opacity:0}
+.pick[aria-pressed=true] .tick{background:var(--brand);border-color:var(--brand);color:var(--on-brand)}
+.pick[aria-pressed=true] .tick .ic{opacity:1}
+.stephead{display:flex;align-items:center;gap:12px;margin:8px 0 14px}
+.prog{height:6px;border-radius:3px;background:var(--surface2);overflow:hidden;margin-bottom:18px}
+.prog i{display:block;height:100%;background:var(--brand);transition:width .3s}
+.prog i.w1{width:25%}.prog i.w2{width:50%}.prog i.w3{width:75%}.prog i.w4{width:100%}
+.banner{display:flex;align-items:center;gap:10px;background:var(--brand-soft);border-radius:14px;padding:8px 14px;margin-bottom:12px}
+.banner .link{margin-inline-start:auto}
+.stepnav{display:flex;gap:10px;margin-top:20px}
+.stepnav .btn{flex:1}
+.sum{margin:0}
+.sum div{display:flex;justify-content:space-between;gap:16px;padding:12px 16px;border-bottom:1px solid var(--line)}
+.sum div:last-child{border-bottom:0}
+.sum dt{color:var(--muted)}
+.sum dd{margin:0;font-weight:600;text-align:end;overflow-wrap:anywhere}
+.stack{display:grid;gap:10px}
+.done{display:grid;justify-items:center;text-align:center;gap:12px;padding:20px 0 6px}
+.done-ic{width:76px;height:76px;border-radius:50%;background:var(--ok-soft);color:var(--ok);display:grid;place-items:center}
+.done-ic .ic{width:38px;height:38px;stroke-width:3;stroke-dasharray:30;stroke-dashoffset:30;animation:draw .5s .15s ease forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.gallery{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px;scrollbar-width:none}
+.gallery figure{margin:0;flex:0 0 78%;max-width:340px;scroll-snap-align:start}
+.gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:18px;display:block;background:var(--surface2)}
+.gallery figcaption{font-size:.8rem;color:var(--muted);margin-top:6px}
+
+/* visits */
+.visit{display:grid;grid-template-columns:64px 1fr;gap:14px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:14px;margin-bottom:12px}
+.vdate{border-radius:14px;background:var(--brand-soft);color:var(--brand);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:8px 0}
+.vdate b{font:700 1.6rem/1 var(--fen)}
+.vdate span{font-size:.8rem;font-weight:700;line-height:1.8}
+.vbody p{color:var(--muted);font-size:.93rem}
+.vact{display:flex;flex-wrap:wrap;gap:8px;grid-column:1/-1}
+.confirm{grid-column:1/-1;display:grid;gap:10px;background:var(--gum-soft);border-radius:14px;padding:12px}
+.badge{display:inline-block;padding:3px 10px;border-radius:999px;font-size:.8rem;font-weight:700;margin-top:6px}
+.b-req{background:var(--warn-soft);color:var(--warn)}
+.b-ok{background:var(--ok-soft);color:var(--ok)}
+.b-off{background:var(--surface2);color:var(--muted)}
+
+/* info pages */
+.acc{background:var(--surface);border:1px solid var(--line);border-radius:16px;margin-bottom:10px}
+.acc summary{list-style:none;cursor:pointer;padding:14px 16px;font-weight:700;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.acc summary::-webkit-details-marker{display:none}
+.acc summary .ic{transition:transform .2s;color:var(--muted)}
+.acc[open] summary .ic{transform:rotate(90deg)}
+[dir="rtl"] .acc summary .ic{transform:scaleX(-1)}
+[dir="rtl"] .acc[open] summary .ic{transform:scaleX(-1) rotate(90deg)}
+.accb{padding:0 16px 16px}
+.accb ul{margin:8px 0 0;padding-inline-start:20px}
+.accb li{margin:6px 0}
+.alert{background:var(--gum-soft);border:1.5px solid var(--gum);border-radius:18px;padding:16px;display:grid;gap:12px;margin-bottom:16px}
+.doc{display:flex;align-items:center;gap:16px;margin-bottom:16px}
+.avatar{width:84px;height:84px;border-radius:26px;background:var(--brand);color:var(--on-brand);display:grid;place-items:center;font:700 1.9rem var(--fen);flex:none}
+img.avatar{object-fit:cover;display:block}
+.rate{display:flex;align-items:center;gap:18px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:18px}
+.bigrate{font:700 3.4rem/1 var(--fen)}
+.stars{display:flex;gap:2px;color:var(--star)}
+.stars .ic{width:22px;height:22px}
+.hours div{display:flex;justify-content:space-between;gap:12px;padding:11px 0;border-bottom:1px solid var(--line)}
+.hours div:last-child{border-bottom:0}
+.hours .today{font-weight:700;color:var(--brand)}
+#toast{position:fixed;left:50%;transform:translate(-50%,20px);bottom:calc(88px + env(safe-area-inset-bottom,0px));max-width:min(92vw,440px);background:var(--ink);color:var(--bg);padding:12px 16px;border-radius:14px;opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;z-index:50;font-weight:600}
+#toast.on{opacity:1;transform:translate(-50%,0);pointer-events:auto}
+#toast a{color:inherit}
+@media (min-width:900px){#toast{bottom:calc(28px + env(safe-area-inset-bottom,0px))}}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.done-ic .ic{stroke-dashoffset:0}}
+</style>
+</head>
+<body>
+<a class="skip" href="#app" id="skip"></a>
+<div class="shell">
+  <header class="bar">
+    <button class="brand" data-a="go" data-v="home" id="brandBtn">
+      <span class="logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path id="logo-path" d=""/></svg></span>
+      <span><b id="brandName"></b><small id="brandSub"></small></span>
+    </button>
+    <div class="tools">
+      <button class="langbtn" id="langBtn" data-a="lang"></button>
+      <button class="iconbtn" id="themeBtn" data-a="theme"></button>
+    </div>
+  </header>
+  <nav class="tabs" id="tabs"></nav>
+  <main id="app" tabindex="-1"></main>
+</div>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+'use strict';
+
+/* ---------- Clinic settings: edit these to update the app ----------
+   Text that can be translated is written as ['English','اردو'].
+   Lists are written as {en:[...],ur:[...]}. */
+var CONFIG={
+  name:['Dr. Tahira Tanweer Dental Practice','ڈاکٹر طاہرہ تنویر ڈینٹل پریکٹس'],
+  phoneDisplay:'+92 328 5264911',
+  phoneTel:'+923285264911',
+  whatsapp:'923285264911',
+  rating:5,
+  reviewCount:12,
+  address:['',''],
+  mapsQuery:'Dr. Tahira Tanweer Dental Practice',
+  hours:{0:null,1:['10:00','20:00'],2:['10:00','20:00'],3:['10:00','20:00'],4:['10:00','20:00'],5:['10:00','20:00'],6:['10:00','20:00']},
+  slotMinutes:30,
+  leadMinutes:60,
+  daysAhead:14,
+  doctor:{
+    name:['Dr. Tahira Tanweer','ڈاکٹر طاہرہ تنویر'],
+    title:['Dentist','ڈینٹسٹ'],
+    bio:{
+      en:['Dr. Tahira Tanweer sees patients at Dr. Tahira Tanweer Dental Practice. Call or message the clinic to ask about treatments, fees and availability.'],
+      ur:['ڈاکٹر طاہرہ تنویر اپنی ڈینٹل پریکٹس میں مریضوں کو دیکھتی ہیں۔ علاج، فیس اور دستیابی کے بارے میں جاننے کے لیے کلینک کو کال کریں یا پیغام بھیجیں۔']
+    },
+    qualifications:{en:[],ur:[]},
+    experience:['',''],
+    registration:'',
+    languages:{en:[],ur:[]},
+    focus:{en:[],ur:[]}
+  },
+  /* Prices: add an entry per service id, for example checkup:'Rs 1,500' or filling:'From Rs 3,000'. Empty ones show a Get price button. */
+  fees:{
+    consultation:'',
+    note:['Prices depend on your treatment and can change. Ask the clinic for a quote before you book.','قیمتیں علاج کے مطابق ہوتی ہیں اور بدل سکتی ہیں۔ بک کرنے سے پہلے کلینک سے قیمت معلوم کر لیں۔']
+  },
+  prices:{},
+  /* Photos: paste image data (data:image/jpeg;base64,...) here. Published pages cannot load images from other websites. */
+  images:{
+    hero:'',
+    doctor:'',
+    gallery:[]
+  }
+};
+
+var CATEGORIES={
+  prevention:['Check-up and prevention','معائنہ اور بچاؤ'],
+  emergency:['Pain and emergencies','درد اور ایمرجنسی'],
+  repairs:['Fillings and repairs','فلنگ اور مرمت'],
+  replace:['Replacing teeth','دانت بدلنا'],
+  surgery:['Surgery and gums','سرجری اور مسوڑھے'],
+  smile:['Smile care','مسکراہٹ کی دیکھ بھال'],
+  braces:['Braces and alignment','بریسز اور سیدھ'],
+  kids:['Children','بچے']
+};
+var CATS=['prevention','emergency','repairs','replace','surgery','smile','braces','kids'];
+var SERVICES=[
+  {id:'checkup',cat:'prevention',n:['Check-up and consultation','معائنہ اور مشورہ'],d:['A full check of your teeth and gums, with advice on any treatment you need.','دانتوں اور مسوڑھوں کا مکمل معائنہ، اور ضروری علاج کے بارے میں مشورہ۔']},
+  {id:'cleaning',cat:'prevention',n:['Scaling and polishing','دانتوں کی صفائی (سکیلنگ اور پالشنگ)'],d:['Removes plaque and tartar so your teeth and gums feel clean and fresh.','پلاک اور ٹارٹر ہٹا کر دانتوں اور مسوڑھوں کو صاف اور تازہ کرتی ہے۔']},
+  {id:'pain',cat:'emergency',n:['Toothache or urgent visit','دانت درد یا فوری معائنہ'],d:['For pain, swelling, a broken tooth or a lost filling. Call the clinic first if you can.','درد، سوجن، ٹوٹے ہوئے دانت یا نکلی ہوئی فلنگ کے لیے۔ ممکن ہو تو پہلے کلینک کو کال کریں۔']},
+  {id:'filling',cat:'repairs',n:['Tooth-coloured fillings','دانت کے رنگ کی فلنگ'],d:['Repairs cavities and chipped teeth with a natural-looking material.','کیویٹی اور ٹوٹے ہوئے دانتوں کی مرمت قدرتی نظر آنے والے مواد سے۔']},
+  {id:'rct',cat:'repairs',n:['Root canal treatment','روٹ کینال علاج'],d:['Treats an infected or badly damaged tooth from the inside so it can be saved.','انفیکشن یا شدید خراب دانت کا اندر سے علاج تاکہ دانت بچایا جا سکے۔']},
+  {id:'crown',cat:'repairs',n:['Crowns and bridges','کراؤن اور برج'],d:['Caps that protect a weak tooth, or fixed teeth that fill a gap.','کمزور دانت کی حفاظت کے لیے خول، یا خالی جگہ پُر کرنے کے لیے مستقل دانت۔']},
+  {id:'dentures',cat:'replace',n:['Dentures','مصنوعی دانت (ڈینچرز)'],d:['Removable teeth for one, several or all missing teeth.','ایک، کئی یا تمام گمشدہ دانتوں کے لیے نکالے جانے والے دانت۔']},
+  {id:'implant',cat:'replace',n:['Dental implant consultation','ڈینٹل امپلانٹ مشورہ'],d:['Talk through the options for replacing a missing tooth with an implant.','گمشدہ دانت کی جگہ امپلانٹ لگانے کے آپشنز پر بات چیت۔']},
+  {id:'extraction',cat:'surgery',n:['Tooth extraction','دانت نکلوانا'],d:['Safe removal of a tooth that cannot be saved.','ایسے دانت کو محفوظ طریقے سے نکالنا جسے بچایا نہیں جا سکتا۔']},
+  {id:'wisdom',cat:'surgery',n:['Wisdom tooth assessment','عقل داڑھ کا معائنہ'],d:['Check painful or crowded wisdom teeth and plan removal if needed.','تکلیف دینے والی یا جگہ کی کمی والی عقل داڑھ کا معائنہ، اور ضرورت ہو تو نکالنے کی منصوبہ بندی۔']},
+  {id:'gum',cat:'surgery',n:['Gum treatment','مسوڑھوں کا علاج'],d:['Care for bleeding, swollen or receding gums.','خون آنے، سوجے ہوئے یا سکڑتے مسوڑھوں کی دیکھ بھال۔']},
+  {id:'whitening',cat:'smile',n:['Teeth whitening','دانتوں کی سفیدی'],d:['Lifts stains from coffee, tea and everyday wear for a brighter smile.','چائے، کافی اور روزمرہ کے داغ ہٹا کر مسکراہٹ کو روشن کرتی ہے۔']},
+  {id:'braces',cat:'braces',n:['Braces and aligners consultation','بریسز اور الائنرز مشورہ'],d:['Find out if braces or aligners suit you and what to expect.','جانیں کہ بریسز یا الائنرز آپ کے لیے موزوں ہیں یا نہیں، اور کیا توقع رکھنی چاہیے۔']},
+  {id:'kids',cat:'kids',n:['Children\u2019s dentistry','بچوں کے دانتوں کا علاج'],d:['Check-ups and preventive care to keep young teeth healthy.','چھوٹے دانتوں کو صحت مند رکھنے کے لیے معائنہ اور بچاؤ کی دیکھ بھال۔']}
+];
+var CONCERNS=[['Toothache','دانت میں درد'],['Swelling','سوجن'],['Bleeding gums','مسوڑھوں سے خون'],['Sensitivity','ٹھنڈا گرم لگنا'],['Broken or chipped tooth','دانت ٹوٹا یا چپکا ہوا'],['Bad breath','منہ کی بو'],['Just a check-up','صرف معائنہ']];
+
+/* ---------- language ---------- */
+var lang='en';
+function T(en,ur){return (lang==='ur'&&ur!=null)?ur:en}
+function PL(p){if(typeof p==='string')return p;return (lang==='ur'&&p[1])?p[1]:p[0]}
+function LX(o){var l=o[lang];return (l&&l.length)?l:o.en}
+function ltr(s){return '<bdi dir="ltr">'+esc(s)+'</bdi>'}
+
+/* ---------- helpers ---------- */
+var TOOTH='M12 4.5C10.5 4.5 9.5 3 7.5 3 5 3 3.5 5 3.5 7.5 3.5 9.5 4.5 11 5 13 5.5 15.5 5.5 21 8 21 9.5 21 9.5 16 10.5 14.5 11 13.8 11.5 13.5 12 13.5 12.5 13.5 13 13.8 13.5 14.5 14.5 16 14.5 21 16 21 18.5 21 18.5 15.5 19 13 19.5 11 20.5 9.5 20.5 7.5 20.5 5 19 3 16.5 3 14.5 3 13.5 4.5 12 4.5Z';
+var ICONS={
+  home:'<path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v10h13V10"/><path d="M10 20v-5.5h4V20"/>',
+  list:'<path d="M9 6h11M9 12h11M9 18h11"/><circle cx="4.5" cy="6" r="1"/><circle cx="4.5" cy="12" r="1"/><circle cx="4.5" cy="18" r="1"/>',
+  cal:'<rect x="3" y="4.5" width="18" height="16" rx="3"/><path d="M8 2.5v4M16 2.5v4M3 10h18M12 13v4.5M9.75 15.25h4.5"/>',
+  clock:'<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/>',
+  more:'<circle cx="5" cy="12" r="1.3" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1.3" fill="currentColor" stroke="none"/><circle cx="19" cy="12" r="1.3" fill="currentColor" stroke="none"/>',
+  phone:'<path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/>',
+  chat:'<path d="M21 12a8.5 8.5 0 0 1-12.4 7.5L3 21l1.5-5.6A8.5 8.5 0 1 1 21 12z"/>',
+  pin:'<path d="M12 21s7-6.1 7-11.5a7 7 0 0 0-14 0C5 14.9 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/>',
+  alert:'<path d="M12 3.5 22 20.5H2L12 3.5z"/><path d="M12 10v4.5M12 17.5h.01"/>',
+  star:'<path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9L12 3z"/>',
+  right:'<path d="M9 6l6 6-6 6"/>',
+  back:'<path d="M15 6l-6 6 6 6"/>',
+  moon:'<path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/>',
+  sun:'<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>',
+  check:'<path d="M5 12.5l4.5 4.5L19 7"/>',
+  heart:'<path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/>',
+  help:'<circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.6 2.2c-.7.4-1.1.9-1.1 1.8M12 17h.01"/>',
+  user:'<circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/>',
+  shield:'<path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/>',
+  tag:'<path d="M3 12V4h8l10 10-8 8L3 12z"/><circle cx="7.5" cy="8.5" r="1.2"/>',
+  clip:'<path d="M9 4h6a1 1 0 0 1 1 1v1H8V5a1 1 0 0 1 1-1z"/><rect x="5" y="6" width="14" height="15" rx="2"/><path d="M9 12h6M9 16h4"/>'
+};
+function ic(n,c){var f=(n==='right'||n==='back')?' flip':'';return '<svg class="ic'+(c?' '+c:'')+f+'" viewBox="0 0 24 24" aria-hidden="true" focusable="false">'+ICONS[n]+'</svg>'}
+function $(s,r){return (r||document).querySelector(s)}
+function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
+function pad(n){return String(n).padStart(2,'0')}
+function iso(d){return d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate())}
+function fromIso(s){var p=s.split('-').map(Number);return new Date(p[0],p[1]-1,p[2])}
+function mins(t){var p=t.split(':').map(Number);return p[0]*60+p[1]}
+function t12(t){
+  var p=t.split(':').map(Number),h=p[0],hh=(h%12||12)+':'+pad(p[1]);
+  if(lang==='ur')return hh+' '+(h<12?'صبح':(h<16?'دوپہر':'شام'));
+  return hh+' '+(h>=12?'pm':'am');
+}
+var DAYS_EN=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+var DAYS_LONG_EN=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+var DAYS_UR=['اتوار','پیر','منگل','بدھ','جمعرات','جمعہ','ہفتہ'];
+var MONTHS_EN=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+var MONTHS_UR=['جنوری','فروری','مارچ','اپریل','مئی','جون','جولائی','اگست','ستمبر','اکتوبر','نومبر','دسمبر'];
+function dn(i){return lang==='ur'?DAYS_UR[i]:DAYS_EN[i]}
+function dnl(i){return lang==='ur'?DAYS_UR[i]:DAYS_LONG_EN[i]}
+function mn(i){return lang==='ur'?MONTHS_UR[i]:MONTHS_EN[i]}
+function dayLong(s){var d=fromIso(s);return dn(d.getDay())+' '+d.getDate()+' '+mn(d.getMonth())}
+
+var mem={};
+var store={
+  get:function(k,f){try{var v=localStorage.getItem(k);return v?JSON.parse(v):(k in mem?mem[k]:f)}catch(e){return k in mem?mem[k]:f}},
+  set:function(k,v){mem[k]=v;try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}},
+  del:function(k){delete mem[k];try{localStorage.removeItem(k)}catch(e){}}
+};
+
+var appts=store.get('dtd.appts',[]);
+var profile=store.get('dtd.profile',{name:'',phone:'',age:''});
+var theme=store.get('dtd.theme',null);
+
+function newDraft(){return {step:1,service:null,date:null,time:null,name:profile.name||'',phone:profile.phone||'',age:profile.age||'',forWho:'me',patientName:'',ptype:'new',concerns:[],notes:'',medical:'',reschedule:null,doneId:null,sent:false}}
+var state={view:'home',homeDate:null,q:'',cat:'All',visitsTab:'upcoming',confirmCancel:null,confirmClear:false,fb:'',errors:{},draft:newDraft()};
+
+var telHref='tel:'+CONFIG.phoneTel;
+var mapsHref='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(CONFIG.mapsQuery);
+function wa(text){return 'https://wa.me/'+CONFIG.whatsapp+'?text='+encodeURIComponent(text)}
+function A(href,cls,inner,ext){return '<a class="'+cls+'" href="'+href+'"'+(ext?' target="_blank" rel="noopener"':'')+'>'+inner+'</a>'}
+function clinicName(){return PL(CONFIG.name)}
+function svcById(id){return SERVICES.filter(function(s){return s.id===id})[0]}
+function svcName(s){return PL(s.n)}
+function svcOfAppt(a){var s=svcById(a.serviceId);return s?svcName(s):a.service}
+function priceOf(s){var p=CONFIG.prices[s.id];return p?String(p):''}
+function initials(n){var w=String(n).replace(/^dr\.?\s+/i,'').split(/\s+/).filter(Boolean);return ((w[0]||'').charAt(0)+(w.length>1?w[w.length-1].charAt(0):'')).toUpperCase()}
+function shortText(t,n){t=String(t);return t.length>n?t.slice(0,n).replace(/\s+\S*$/,'')+'...':t}
+function concernLabel(en){var c=CONCERNS.filter(function(x){return x[0]===en})[0];return c?PL(c):en}
+function feeRow(name,price,ask){return '<div class="row"><div class="grow"><h3>'+esc(name)+'</h3></div>'+(price?'<span class="price">'+esc(price)+'</span>':A(wa(ask),'btn soft sm',T('Get price','قیمت معلوم کریں'),true))+'</div>'}
+function consultRow(){return feeRow(T('Consultation fee','مشورے کی فیس'),CONFIG.fees.consultation,T('Hello, what is the consultation fee?','السلام علیکم، مشورے کی فیس کتنی ہے؟'))}
+function svcFeeRow(s){return feeRow(svcName(s),priceOf(s),T('Hello, could you tell me the price for: '+svcById(s.id).n[0]+'?','السلام علیکم، براہِ مہربانی '+svcName(s)+' کی قیمت بتا دیں۔'))}
+function avatarHtml(){var D=CONFIG.doctor;return CONFIG.images.doctor?'<img class="avatar" src="'+esc(CONFIG.images.doctor)+'" alt="'+esc(PL(D.name))+'">':'<div class="avatar" aria-hidden="true">'+esc(initials(D.name[0]))+'</div>'}
+
+/* ---------- availability ---------- */
+function hoursFor(d){return CONFIG.hours[d.getDay()]||null}
+function slotsFor(dateIso){
+  var d=fromIso(dateIso),h=hoursFor(d),out=[];
+  if(!h)return out;
+  var limit=Date.now()+CONFIG.leadMinutes*60000;
+  for(var m=mins(h[0]);m+CONFIG.slotMinutes<=mins(h[1]);m+=CONFIG.slotMinutes){
+    var t=pad(Math.floor(m/60))+':'+pad(m%60);
+    var when=new Date(d.getFullYear(),d.getMonth(),d.getDate(),Math.floor(m/60),m%60).getTime();
+    if(when<limit)continue;
+    var taken=appts.some(function(a){return a.status!=='cancelled'&&a.date===dateIso&&a.time===t&&a.id!==state.draft.reschedule});
+    out.push({t:t,taken:taken});
+  }
+  return out;
+}
+function hasSlots(dateIso){return slotsFor(dateIso).some(function(s){return !s.taken})}
+function days(){
+  var out=[],base=new Date();base.setHours(0,0,0,0);
+  for(var i=0;i<CONFIG.daysAhead;i++){var d=new Date(base);d.setDate(base.getDate()+i);out.push({iso:iso(d),d:d,closed:!hoursFor(d),i:i})}
+  return out;
+}
+function openStatus(){
+  var now=new Date(),h=hoursFor(now),cur=now.getHours()*60+now.getMinutes();
+  if(h&&cur>=mins(h[0])&&cur<mins(h[1]))return {open:true,text:T('Open now, until '+t12(h[1]),'ابھی کھلا ہے، '+t12(h[1])+' تک')};
+  if(h&&cur<mins(h[0]))return {open:false,text:T('Closed, opens today at '+t12(h[0]),'بند ہے، آج '+t12(h[0])+' پر کھلے گا')};
+  for(var i=1;i<=7;i++){var d=new Date(now);d.setDate(now.getDate()+i);var hh=hoursFor(d);if(hh)return {open:false,text:T('Closed, opens '+(i===1?'tomorrow':dn(d.getDay()))+' at '+t12(hh[0]),'بند ہے، '+(i===1?'کل':dn(d.getDay())+' کو')+' '+t12(hh[0])+' پر کھلے گا')}}
+  return {open:false,text:T('Closed','بند ہے')};
+}
+function apptDate(a){var d=fromIso(a.date),p=a.time.split(':').map(Number);d.setHours(p[0],p[1]);return d}
+function isUpcoming(a){return a.status!=='cancelled'&&apptDate(a).getTime()>Date.now()-30*60000}
+
+/* ---------- messages and calendar ---------- */
+function apptFromDraft(){
+  var d=state.draft,svc=svcById(d.service);
+  return {serviceId:d.service,service:svc?svc.n[0]:'',date:d.date,time:d.time,name:d.name.trim(),phone:d.phone.trim(),age:d.age.trim(),forWho:d.forWho,patientName:d.forWho==='other'?d.patientName.trim():'',ptype:d.ptype,concerns:d.concerns.slice().sort(function(a,b){return a-b}).map(function(i){return CONCERNS[i][0]}),notes:d.notes.trim(),medical:d.medical.trim()};
+}
+function serviceForMsg(a){var s=svcById(a.serviceId);if(!s)return a.service;return lang==='ur'?s.n[1]+' ('+s.n[0]+')':s.n[0]}
+function requestMessage(a,oldId){
+  var old=oldId?appts.filter(function(x){return x.id===oldId})[0]:null;
+  var who=a.forWho==='other'?a.patientName:a.name;
+  var L=[];
+  if(lang==='ur'){
+    L.push(old?'السلام علیکم، اپنی دانتوں کی اپائنٹمنٹ ('+dayLong(old.date)+'، '+t12(old.time)+') کا وقت تبدیل کروانا ہے۔':'السلام علیکم، مجھے دانتوں کے معائنے کی اپائنٹمنٹ درکار ہے۔','',
+      'سروس: '+serviceForMsg(a),'پسندیدہ وقت: '+dayLong(a.date)+'، '+t12(a.time),'مریض: '+who+(a.age?' (عمر '+a.age+' سال)':''));
+    if(a.forWho==='other')L.push('بکنگ کرنے والا: '+a.name);
+    L.push('فون: '+a.phone,'ملاقات کی قسم: '+(a.ptype==='new'?'پہلی بار':'پہلے آ چکے ہیں'));
+    if(a.concerns.length)L.push('مسئلہ: '+a.concerns.map(concernLabel).join('، '));
+    if(a.notes)L.push('نوٹس: '+a.notes);
+    if(a.medical)L.push('طبی معلومات: '+a.medical);
+    L.push('','براہِ مہربانی تصدیق کریں کہ یہ وقت دستیاب ہے یا نہیں۔ شکریہ۔');
+  }else{
+    L.push(old?'Hello, I would like to reschedule my dental appointment ('+dayLong(old.date)+', '+t12(old.time)+').':'Hello, I would like to request a dental appointment.','',
+      'Service: '+serviceForMsg(a),'Preferred time: '+dayLong(a.date)+', '+t12(a.time),'Patient: '+who+(a.age?' (age '+a.age+')':''));
+    if(a.forWho==='other')L.push('Booked by: '+a.name);
+    L.push('Phone: '+a.phone,'Visit type: '+(a.ptype==='new'?'New patient':'Returning patient'));
+    if(a.concerns.length)L.push('Concerns: '+a.concerns.join(', '));
+    if(a.notes)L.push('Notes: '+a.notes);
+    if(a.medical)L.push('Medical information: '+a.medical);
+    L.push('','Please confirm if this time is available. Thank you.');
+  }
+  return L.join('\n');
+}
+function calLink(a){
+  var s=apptDate(a),e=new Date(s.getTime()+CONFIG.slotMinutes*60000);
+  function f(d){return d.getFullYear()+pad(d.getMonth()+1)+pad(d.getDate())+'T'+pad(d.getHours())+pad(d.getMinutes())+'00'}
+  return 'https://calendar.google.com/calendar/render?action=TEMPLATE&text='+encodeURIComponent(T('Dental visit: ','ڈینٹل وزٹ: ')+svcOfAppt(a))+'&dates='+f(s)+'/'+f(e)+'&details='+encodeURIComponent(clinicName()+'. '+CONFIG.phoneDisplay)+'&location='+encodeURIComponent(PL(CONFIG.address)||clinicName());
+}
+
+/* ---------- shared view pieces ---------- */
+function subHead(title,to){return '<div class="stephead"><button class="iconbtn" data-a="go" data-v="'+(to||'more')+'" aria-label="'+T('Back','واپس')+'">'+ic('back')+'</button><h1 tabindex="-1">'+esc(title)+'</h1></div>'}
+function dayChip(x,sel,action){
+  var off=x.closed||!hasSlots(x.iso);
+  var label=x.i===0?T('Today','آج'):dn(x.d.getDay());
+  return '<button class="day" data-a="'+action+'" data-v="'+x.iso+'" aria-pressed="'+(sel===x.iso)+'"'+(off?' disabled':'')+' aria-label="'+dayLong(x.iso)+(x.closed?T(', closed','، بند'):off?T(', no times left','، کوئی وقت باقی نہیں'):'')+'"><span class="dw">'+label+'</span><span class="dn">'+x.d.getDate()+'</span></button>';
+}
+function svcRows(list){
+  if(!list.length)return '<div class="empty">'+T('No services match. Try another word, or call the clinic.','کوئی سروس نہیں ملی۔ کوئی اور لفظ آزمائیں، یا کلینک کو کال کریں۔')+'</div>';
+  return list.map(function(s){return '<div class="row"><div class="grow"><h3>'+esc(svcName(s))+'</h3><p>'+esc(PL(s.d))+'</p>'+(priceOf(s)?'<p class="price">'+esc(priceOf(s))+'</p>':'')+'</div><button class="btn soft sm" data-a="bookSvc" data-v="'+s.id+'">'+T('Book','بک کریں')+'</button></div>'}).join('');
+}
+function filtered(){
+  var q=state.q.trim().toLowerCase();
+  return SERVICES.filter(function(s){return (state.cat==='All'||s.cat===state.cat)&&(!q||(s.n.join(' ')+' '+s.d.join(' ')+' '+CATEGORIES[s.cat].join(' ')).toLowerCase().indexOf(q)>=0)});
+}
+function acc(title,body){return '<details class="acc"><summary>'+esc(title)+ic('right')+'</summary><div class="accb">'+body+'</div></details>'}
+function ul(items){return '<ul>'+items.map(function(i){return '<li>'+esc(i)+'</li>'}).join('')+'</ul>'}
+function accList(data){return data.map(function(g){return acc(PL(g.t),ul(g.l[lang==='ur'?1:0]))}).join('')}
+function err(k){return state.errors[k]?'<p class="err" role="alert">'+esc(state.errors[k])+'</p>':''}
+function callLabel(){return T('Call','کال کریں')+' '+ltr(CONFIG.phoneDisplay)}
+
+/* ---------- views ---------- */
+function vHome(){
+  var st=openStatus(),ds=days().slice(0,7);
+  var ok=ds.filter(function(x){return !x.closed&&hasSlots(x.iso)});
+  if(!state.homeDate||!ok.some(function(x){return x.iso===state.homeDate}))state.homeDate=(ok[0]||ds[0]).iso;
+  var slots=slotsFor(state.homeDate).filter(function(s){return !s.taken});
+  var shown=slots.slice(0,7);
+  var next=appts.filter(isUpcoming).sort(function(a,b){return apptDate(a)-apptDate(b)})[0];
+  var h='<section class="hero">'+(CONFIG.images.hero?'<img class="hero-img" src="'+esc(CONFIG.images.hero)+'" alt="">':'')+'<svg class="wm" viewBox="0 0 24 24" aria-hidden="true"><path d="'+TOOTH+'"/></svg>'+
+    '<h1 tabindex="-1">'+esc(clinicName())+'</h1>'+
+    '<p>'+T('Book a dental visit in a few taps, or call the clinic directly.','چند ٹیپس میں دانتوں کے معائنے کی اپائنٹمنٹ بک کریں، یا کلینک کو براہِ راست کال کریں۔')+'</p>'+
+    '<div class="pills"><span class="pill">'+ic('star','fill')+T(CONFIG.rating.toFixed(1)+' rating, '+CONFIG.reviewCount+' reviews',CONFIG.rating.toFixed(1)+' ریٹنگ، '+CONFIG.reviewCount+' جائزے')+'</span><span class="pill"><i class="dot'+(st.open?'':' off')+'"></i>'+esc(st.text)+'</span></div>'+
+    '<div class="hero-actions"><button class="btn light" data-a="go" data-v="book">'+ic('cal')+T('Book appointment','اپائنٹمنٹ بک کریں')+'</button>'+
+    A(telHref,'btn line',ic('phone')+T('Call','کال'))+
+    A(wa(T('Hello, I have a question about a dental visit.','السلام علیکم، مجھے دانتوں کے معائنے کے بارے میں ایک سوال پوچھنا ہے۔')),'btn line',ic('chat')+T('WhatsApp','واٹس ایپ'),true)+'</div></section>';
+  h+='<section class="quick" aria-labelledby="qh"><h2 id="qh">'+T('Pick a time','وقت منتخب کریں')+'</h2><p class="hint">'+T('Times are requests. The clinic confirms on WhatsApp.','یہ وقت صرف درخواست ہوتا ہے۔ کلینک واٹس ایپ پر تصدیق کرتا ہے۔')+'</p>'+
+    '<div class="dayrow" role="group" aria-label="'+T('Choose a day','دن منتخب کریں')+'">'+ds.map(function(x){return dayChip(x,state.homeDate,'homeDay')}).join('')+'</div>'+
+    (shown.length?'<div class="slots">'+shown.map(function(s){return '<button class="slot" data-a="quick" data-v="'+s.t+'">'+t12(s.t)+'</button>'}).join('')+(slots.length>shown.length?'<button class="slot" data-a="quickMore">'+T('More times','مزید اوقات')+'</button>':'')+'</div>':'<div class="empty">'+T('No times left this week. Call the clinic to ask about openings.','اس ہفتے کوئی وقت باقی نہیں۔ خالی وقت کے لیے کلینک کو کال کریں۔')+'</div>')+
+    '<button class="btn ghost block mt" data-a="go" data-v="book">'+T('Choose service and time','سروس اور وقت منتخب کریں')+'</button></section>';
+  if(next){
+    h+='<section class="sec"><div class="sechead"><h2>'+T('Your next visit','آپ کی اگلی ملاقات')+'</h2></div><div class="visit"><div class="vdate"><b>'+apptDate(next).getDate()+'</b><span>'+mn(apptDate(next).getMonth())+'</span></div><div class="vbody"><h3>'+esc(svcOfAppt(next))+'</h3><p>'+dayLong(next.date)+T(', ','، ')+t12(next.time)+'</p>'+badge(next)+'</div><div class="vact"><button class="btn soft sm" data-a="go" data-v="visits">'+T('View details','تفصیل دیکھیں')+'</button></div></div></section>';
+  }
+  h+='<div class="tiles">'+
+    '<button class="tile em" data-a="go" data-v="emergency"><span class="bub">'+ic('alert')+'</span>'+T('Dental emergency help','دانتوں کی ایمرجنسی میں مدد')+'</button>'+
+    A(mapsHref,'tile','<span class="bub">'+ic('pin')+'</span>'+T('Get directions','راستہ دیکھیں'),true)+
+    '<button class="tile" data-a="go" data-v="care"><span class="bub">'+ic('heart')+'</span>'+T('Everyday tooth care','دانتوں کی روزمرہ دیکھ بھال')+'</button>'+
+    '<button class="tile" data-a="go" data-v="reviews"><span class="bub">'+ic('star')+'</span>'+T('Ratings and feedback','ریٹنگ اور رائے')+'</button></div>';
+  h+='<section class="sec"><div class="sechead"><h2>'+T('Popular services','عام خدمات')+'</h2><button class="link" data-a="go" data-v="services">'+T('See all','سب دیکھیں')+'</button></div><div class="list">'+svcRows(SERVICES.filter(function(s){return ['checkup','cleaning','filling','whitening'].indexOf(s.id)>=0}))+'</div></section>';
+  if(CONFIG.images.gallery.length)h+='<section class="sec"><h2>'+T('Gallery','گیلری')+'</h2><div class="gallery mt">'+CONFIG.images.gallery.map(function(g){return '<figure><img loading="lazy" src="'+esc(g.src)+'" alt="'+esc(g.alt||'')+'">'+(g.credit?'<figcaption>'+esc(g.credit)+'</figcaption>':'')+'</figure>'}).join('')+'</div></section>';
+  var D=CONFIG.doctor,paras=LX(CONFIG.doctor.bio);
+  h+='<section class="sec"><div class="sechead"><h2>'+T('Your dentist','آپ کی ڈینٹسٹ')+'</h2></div><div class="card"><div class="doc">'+avatarHtml()+'<div><h3>'+esc(PL(D.name))+'</h3><p class="hint">'+esc(PL(D.title))+'</p></div></div><p>'+esc(shortText(paras[0]||'',170))+'</p><div class="list mt">'+consultRow()+'</div><div class="hero-actions"><button class="btn soft sm" data-a="go" data-v="doctor">'+ic('user')+T('Read full bio','مکمل تعارف پڑھیں')+'</button><button class="btn ghost sm" data-a="go" data-v="prices">'+ic('tag')+T('All prices','تمام قیمتیں')+'</button></div></div></section>';
+  return h;
+}
+
+function vServices(){
+  return '<h1 class="pgt" tabindex="-1">'+T('Services','خدمات')+'</h1>'+
+    '<div class="field"><label class="sr" for="q">'+T('Search services','خدمات تلاش کریں')+'</label><input id="q" type="text" data-f="q" placeholder="'+T('Search, for example root canal','تلاش کریں، مثلاً روٹ کینال')+'" value="'+esc(state.q)+'" autocomplete="off"></div>'+
+    '<div class="chips" role="group" aria-label="'+T('Filter by type','قسم کے مطابق چھانٹیں')+'"><button class="chip" data-a="cat" data-v="All" aria-pressed="'+(state.cat==='All')+'">'+T('All','سب')+'</button>'+CATS.map(function(c){return '<button class="chip" data-a="cat" data-v="'+c+'" aria-pressed="'+(state.cat===c)+'">'+esc(PL(CATEGORIES[c]))+'</button>'}).join('')+'</div>'+
+    '<div class="list" id="svc-list">'+svcRows(filtered())+'</div>'+
+    '<p class="hint mt2">'+T('Fees depend on the treatment.','فیس علاج کے مطابق ہوتی ہے۔')+' <button class="link" data-a="go" data-v="prices">'+T('See the price list','قیمتوں کی فہرست دیکھیں')+'</button></p>'+
+    '<div class="hero-actions">'+A(telHref,'btn ghost',ic('phone')+T('Call the clinic','کلینک کو کال کریں'))+A(wa(T('Hello, I would like to ask about a treatment.','السلام علیکم، مجھے ایک علاج کے بارے میں معلومات درکار ہیں۔')),'btn ghost',ic('chat')+T('Ask on WhatsApp','واٹس ایپ پر پوچھیں'),true)+'</div>';
+}
+
+function stepTitle(n){return [T('Choose a service','سروس منتخب کریں'),T('Pick a date and time','تاریخ اور وقت منتخب کریں'),T('Your details','آپ کی تفصیل'),T('Review and send','جانچیں اور بھیجیں')][n-1]}
+function vBook(){
+  var d=state.draft;
+  if(d.doneId)return vDone();
+  var h='<div class="stephead"><button class="iconbtn" data-a="stepBack" aria-label="'+T('Back','واپس')+'">'+ic('back')+'</button><div><p class="hint">'+T('Step '+d.step+' of 4','مرحلہ '+d.step+' از 4')+'</p><h1 tabindex="-1">'+stepTitle(d.step)+'</h1></div></div><div class="prog"><i class="w'+d.step+'"></i></div>';
+  if(d.reschedule)h+='<div class="banner">'+ic('clock')+'<span>'+T('Rescheduling a visit. Your old request is cancelled when you send the new one.','ملاقات کا وقت بدلا جا رہا ہے۔ نئی درخواست بھیجنے پر پرانی درخواست منسوخ ہو جائے گی۔')+'</span></div>';
+  if(d.step===1){
+    if(d.date&&d.time)h+='<div class="banner">'+ic('clock')+'<span>'+T('Time chosen:','منتخب وقت:')+' <b>'+dayLong(d.date)+', '+t12(d.time)+'</b></span></div>';
+    h+=CATS.map(function(c){return '<div class="gt">'+esc(PL(CATEGORIES[c]))+'</div><div class="list">'+SERVICES.filter(function(s){return s.cat===c}).map(function(s){return '<button class="pick" data-a="pickSvc" data-v="'+s.id+'" aria-pressed="'+(d.service===s.id)+'"><span class="tick">'+ic('check')+'</span><span><b>'+esc(svcName(s))+'</b><br><span class="hint">'+esc(PL(s.d))+'</span>'+(priceOf(s)?'<br><b>'+esc(priceOf(s))+'</b>':'')+'</span></button>'}).join('')+'</div>'}).join('');
+  }
+  if(d.step===2){
+    var ds=days();
+    if(!d.date||!hasSlots(d.date)){var f=ds.filter(function(x){return !x.closed&&hasSlots(x.iso)})[0];d.date=f?f.iso:null;d.time=null}
+    var slots=d.date?slotsFor(d.date):[];
+    if(d.time&&!slots.some(function(s){return s.t===d.time&&!s.taken}))d.time=null;
+    h+='<div class="dayrow" role="group" aria-label="'+T('Choose a day','دن منتخب کریں')+'">'+ds.map(function(x){return dayChip(x,d.date,'pickDay')}).join('')+'</div>';
+    h+=slots.length?'<div class="slots">'+slots.map(function(s){return '<button class="slot" data-a="pickTime" data-v="'+s.t+'" aria-pressed="'+(d.time===s.t)+'"'+(s.taken?' disabled':'')+'>'+t12(s.t)+'</button>'}).join('')+'</div>':'<div class="empty">'+T('No times available. Call the clinic to ask about openings.','کوئی وقت دستیاب نہیں۔ خالی وقت کے لیے کلینک کو کال کریں۔')+'</div>';
+    h+='<p class="hint mt">'+T('Times are requests. The clinic replies on WhatsApp to confirm.','یہ وقت درخواست ہے۔ کلینک واٹس ایپ پر جواب دے کر تصدیق کرے گا۔')+'</p>';
+    h+='<div class="stepnav"><button class="btn" data-a="stepNext"'+(d.date&&d.time?'':' disabled')+'>'+T('Continue','آگے بڑھیں')+'</button></div>';
+  }
+  if(d.step===3){
+    h+='<div class="field"><span class="lbl">'+T('Who is the patient?','مریض کون ہے؟')+'</span><div class="seg" role="group" aria-label="'+T('Patient','مریض')+'"><button data-a="forWho" data-v="me" aria-pressed="'+(d.forWho==='me')+'">'+T('Me','میں خود')+'</button><button data-a="forWho" data-v="other" aria-pressed="'+(d.forWho==='other')+'">'+T('Someone else','کوئی اور')+'</button></div></div>';
+    h+='<div class="field"><label for="f-name">'+T('Your name','آپ کا نام')+'</label><input id="f-name" type="text" data-f="name" value="'+esc(d.name)+'" autocomplete="name">'+err('name')+'</div>';
+    h+='<div class="field"><label for="f-phone">'+T('Phone number','فون نمبر')+'</label><input id="f-phone" type="tel" inputmode="tel" dir="ltr" data-f="phone" value="'+esc(d.phone)+'" placeholder="0300 1234567" autocomplete="tel">'+err('phone')+'</div>';
+    if(d.forWho==='other')h+='<div class="field"><label for="f-pn">'+T('Patient\u2019s name','مریض کا نام')+'</label><input id="f-pn" type="text" data-f="patientName" value="'+esc(d.patientName)+'">'+err('patientName')+'</div>';
+    h+='<div class="field"><label for="f-age">'+T('Patient\u2019s age (optional)','مریض کی عمر (اختیاری)')+'</label><input id="f-age" type="text" inputmode="numeric" maxlength="3" dir="ltr" data-f="age" value="'+esc(d.age)+'" placeholder="'+T('For example 34','مثلاً 34')+'">'+err('age')+'</div>';
+    h+='<div class="field"><span class="lbl">'+T('Have you visited this clinic before?','کیا آپ پہلے اس کلینک آ چکے ہیں؟')+'</span><div class="seg" role="group" aria-label="'+T('Visit type','ملاقات کی قسم')+'"><button data-a="ptype" data-v="new" aria-pressed="'+(d.ptype==='new')+'">'+T('First visit','پہلی بار')+'</button><button data-a="ptype" data-v="returning" aria-pressed="'+(d.ptype==='returning')+'">'+T('Returning','پہلے آ چکے ہیں')+'</button></div></div>';
+    h+='<div class="field"><span class="lbl">'+T('What is the visit about? (optional)','ملاقات کس بارے میں ہے؟ (اختیاری)')+'</span><div class="chips wrap" role="group" aria-label="'+T('Concerns','مسائل')+'">'+CONCERNS.map(function(c,i){return '<button class="chip" data-a="toggleConcern" data-v="'+i+'" aria-pressed="'+(d.concerns.indexOf(i)>=0)+'">'+esc(PL(c))+'</button>'}).join('')+'</div></div>';
+    h+='<div class="field"><label for="f-notes">'+T('Anything else the clinic should know? (optional)','کلینک کو کچھ اور بتانا ہے؟ (اختیاری)')+'</label><textarea id="f-notes" data-f="notes" placeholder="'+T('For example, which tooth hurts and for how long','مثلاً کون سا دانت درد کر رہا ہے اور کب سے')+'">'+esc(d.notes)+'</textarea></div>';
+    h+='<div class="field"><label for="f-med">'+T('Allergies, medicines or medical conditions (optional)','الرجی، ادویات یا کوئی بیماری (اختیاری)')+'</label><textarea id="f-med" data-f="medical" placeholder="'+T('This helps the dentist prepare','اس سے ڈینٹسٹ کو تیاری میں مدد ملتی ہے')+'">'+esc(d.medical)+'</textarea><p class="hint">'+T('Only sent to the clinic if you choose to send your request.','یہ صرف تب کلینک کو جاتا ہے جب آپ درخواست بھیجنے کا انتخاب کریں۔')+'</p></div>';
+    h+='<div class="stepnav"><button class="btn" data-a="stepNext">'+T('Review request','درخواست دیکھیں')+'</button></div>';
+  }
+  if(d.step===4){
+    var a=apptFromDraft();
+    var rows=[[T('Service','سروس'),esc(svcOfAppt(a))],[T('When','وقت'),esc(dayLong(a.date)+', '+t12(a.time))],[T('Patient','مریض'),esc(a.forWho==='other'?a.patientName:a.name)+(a.age?esc(T(', age '+a.age,'، عمر '+a.age+' سال')):'')]];
+    if(a.forWho==='other')rows.push([T('Booked by','بکنگ کرنے والا'),esc(a.name)]);
+    rows.push([T('Phone','فون'),ltr(a.phone)],[T('Visit type','ملاقات کی قسم'),a.ptype==='new'?T('First visit','پہلی بار'):T('Returning','پہلے آ چکے ہیں')]);
+    if(a.concerns.length)rows.push([T('About','موضوع'),esc(a.concerns.map(concernLabel).join(T(', ','، ')))]);
+    if(a.notes)rows.push([T('Notes','نوٹس'),esc(a.notes)]);
+    if(a.medical)rows.push([T('Medical information','طبی معلومات'),esc(a.medical)]);
+    h+='<div class="list"><dl class="sum">'+rows.map(function(r){return '<div><dt>'+r[0]+'</dt><dd>'+r[1]+'</dd></div>'}).join('')+'</dl></div>';
+    h+='<p class="hint mt">'+T('Your request reaches the clinic when you send the WhatsApp message. Nothing is sent automatically.','آپ کی درخواست تب کلینک تک پہنچتی ہے جب آپ واٹس ایپ پیغام بھیجتے ہیں۔ کچھ بھی خود بخود نہیں بھیجا جاتا۔')+'</p>';
+    h+='<div class="stack mt">'+A(wa(requestMessage(a,d.reschedule)),'btn block',ic('chat')+T('Send request on WhatsApp','واٹس ایپ پر درخواست بھیجیں'),true).replace('<a ','<a data-a="send" ')+
+      A(telHref,'btn ghost block',ic('phone')+T('Call the clinic instead','اس کے بجائے کلینک کو کال کریں'))+
+      '<button class="btn ghost block" data-a="saveOnly">'+T('Save without sending','بھیجے بغیر محفوظ کریں')+'</button></div>';
+  }
+  return h;
+}
+
+function vDone(){
+  var d=state.draft,a=appts.filter(function(x){return x.id===d.doneId})[0];
+  if(!a){state.draft=newDraft();return vBook()}
+  var msg=requestMessage(a,d.reschedule);
+  return '<div class="done"><div class="done-ic">'+ic('check')+'</div><h1 tabindex="-1">'+(d.sent?T('Request saved','درخواست محفوظ ہو گئی'):T('Saved on this device','اس ڈیوائس پر محفوظ ہو گیا'))+'</h1>'+
+    '<p>'+(d.sent?T('The clinic receives your request once you send the WhatsApp message. They will reply to confirm your time.','کلینک کو آپ کی درخواست تب ملے گی جب آپ واٹس ایپ پیغام بھیجیں گے۔ وہ وقت کی تصدیق کے لیے جواب دیں گے۔'):T('Send it to the clinic when you are ready. They will reply to confirm your time.','جب تیار ہوں تو کلینک کو بھیج دیں۔ وہ وقت کی تصدیق کے لیے جواب دیں گے۔'))+'</p></div>'+
+    '<div class="list mt2"><dl class="sum"><div><dt>'+T('Service','سروس')+'</dt><dd>'+esc(svcOfAppt(a))+'</dd></div><div><dt>'+T('When','وقت')+'</dt><dd>'+esc(dayLong(a.date)+', '+t12(a.time))+'</dd></div><div><dt>'+T('Patient','مریض')+'</dt><dd>'+esc(a.forWho==='other'?a.patientName:a.name)+'</dd></div></dl></div>'+
+    '<div class="stack mt2">'+A(wa(msg),'btn block',ic('chat')+(d.sent?T('Open WhatsApp again','واٹس ایپ دوبارہ کھولیں'):T('Send on WhatsApp','واٹس ایپ پر بھیجیں')),true)+
+    A(calLink(a),'btn soft block',ic('cal')+T('Add to Google Calendar','گوگل کیلنڈر میں شامل کریں'),true)+
+    '<button class="btn ghost block" data-a="go" data-v="visits">'+T('View my visits','میری ملاقاتیں دیکھیں')+'</button>'+
+    '<button class="btn ghost block" data-a="go" data-v="home">'+T('Back to home','ہوم پر واپس')+'</button></div>';
+}
+
+function badge(a){
+  if(a.status==='cancelled')return '<span class="badge b-off">'+T('Cancelled','منسوخ')+'</span>';
+  if(!isUpcoming(a))return '<span class="badge b-off">'+T('Past visit','گزری ہوئی ملاقات')+'</span>';
+  if(a.status==='confirmed')return '<span class="badge b-ok">'+T('Confirmed','تصدیق شدہ')+'</span>';
+  return '<span class="badge b-req">'+T('Waiting for the clinic','کلینک کی تصدیق کا انتظار')+'</span>';
+}
+function visitCard(a){
+  var up=isUpcoming(a),dt=apptDate(a);
+  var who=a.forWho==='other'?a.patientName:a.name;
+  var h='<article class="visit"><div class="vdate"><b>'+dt.getDate()+'</b><span>'+mn(dt.getMonth())+'</span></div><div class="vbody"><h3>'+esc(svcOfAppt(a))+'</h3><p>'+dn(dt.getDay())+T(', ','، ')+t12(a.time)+'</p><p>'+esc(who)+'</p>'+badge(a)+'</div>';
+  if(state.confirmCancel===a.id){
+    h+='<div class="confirm"><p><b>'+T('Cancel this visit?','کیا یہ ملاقات منسوخ کریں؟')+'</b></p><div class="vact"><button class="btn danger sm" data-a="cancelYes" data-v="'+a.id+'">'+T('Yes, cancel','ہاں، منسوخ کریں')+'</button><button class="btn ghost sm" data-a="cancelNo">'+T('Keep it','رہنے دیں')+'</button></div></div>';
+  }else if(up){
+    h+='<div class="vact">'+A(wa(T('Hello, this is about my dental appointment on '+dayLong(a.date)+', '+t12(a.time)+' ('+a.service+').','السلام علیکم، یہ '+dayLong(a.date)+'، '+t12(a.time)+' کی میری اپائنٹمنٹ ('+svcOfAppt(a)+') کے بارے میں ہے۔')),'btn soft sm',ic('chat')+T('Message clinic','کلینک کو پیغام'),true)+
+      A(calLink(a),'btn ghost sm',ic('cal')+T('Add to calendar','کیلنڈر میں شامل کریں'),true)+
+      (a.status==='requested'?'<button class="btn ghost sm" data-a="confirmed" data-v="'+a.id+'">'+T('Clinic confirmed','کلینک نے تصدیق کر دی')+'</button>':'')+
+      '<button class="btn ghost sm" data-a="resched" data-v="'+a.id+'">'+T('Reschedule','وقت بدلیں')+'</button>'+
+      '<button class="btn danger sm" data-a="cancelAsk" data-v="'+a.id+'">'+T('Cancel','منسوخ کریں')+'</button></div>';
+  }else{
+    h+='<div class="vact"><button class="btn soft sm" data-a="again" data-v="'+a.id+'">'+T('Book again','دوبارہ بک کریں')+'</button></div>';
+  }
+  return h+'</article>';
+}
+function vVisits(){
+  var up=appts.filter(isUpcoming).sort(function(a,b){return apptDate(a)-apptDate(b)});
+  var past=appts.filter(function(a){return !isUpcoming(a)}).sort(function(a,b){return apptDate(b)-apptDate(a)});
+  var list=state.visitsTab==='upcoming'?up:past;
+  var h='<h1 class="pgt" tabindex="-1">'+T('My visits','میری ملاقاتیں')+'</h1><div class="seg" role="group" aria-label="'+T('Visit list','ملاقاتوں کی فہرست')+'"><button data-a="visitsTab" data-v="upcoming" aria-pressed="'+(state.visitsTab==='upcoming')+'">'+T('Upcoming','آنے والی')+'</button><button data-a="visitsTab" data-v="past" aria-pressed="'+(state.visitsTab==='past')+'">'+T('Past and cancelled','گزری اور منسوخ')+'</button></div><div class="mt2">';
+  h+=list.length?list.map(visitCard).join(''):'<div class="empty">'+(state.visitsTab==='upcoming'?T('No upcoming visits yet.','ابھی کوئی آنے والی ملاقات نہیں۔'):T('Nothing here yet.','ابھی یہاں کچھ نہیں۔'))+'<div class="mt"><button class="btn sm" data-a="go" data-v="book">'+T('Book a visit','ملاقات بک کریں')+'</button></div></div>';
+  h+='</div><section class="sec"><h2>'+T('Your details','آپ کی تفصیل')+'</h2><p class="hint">'+T('Saved on this device only, to make booking faster.','صرف اسی ڈیوائس پر محفوظ ہے تاکہ بکنگ تیز ہو۔')+'</p><div class="mt">'+
+    '<div class="field"><label for="pf-name">'+T('Name','نام')+'</label><input id="pf-name" type="text" value="'+esc(profile.name)+'" autocomplete="name"></div>'+
+    '<div class="field"><label for="pf-phone">'+T('Phone number','فون نمبر')+'</label><input id="pf-phone" type="tel" inputmode="tel" dir="ltr" value="'+esc(profile.phone)+'" autocomplete="tel"></div>'+
+    '<div class="field"><label for="pf-age">'+T('Age (optional)','عمر (اختیاری)')+'</label><input id="pf-age" type="text" inputmode="numeric" maxlength="3" dir="ltr" value="'+esc(profile.age)+'"></div>'+
+    '<div class="stack"><button class="btn" data-a="saveProfile">'+T('Save details','تفصیل محفوظ کریں')+'</button>';
+  h+=state.confirmClear?'<div class="confirm"><p><b>'+T('Erase all visits and details on this device?','اس ڈیوائس سے تمام ملاقاتیں اور تفصیلات مٹا دیں؟')+'</b></p><div class="vact"><button class="btn danger sm" data-a="clearYes">'+T('Yes, erase','ہاں، مٹا دیں')+'</button><button class="btn ghost sm" data-a="clearNo">'+T('Keep them','رہنے دیں')+'</button></div></div>':'<button class="btn ghost" data-a="clearAsk">'+T('Erase my data on this device','اس ڈیوائس سے میرا ڈیٹا مٹا دیں')+'</button>';
+  return h+'</div></div></section>';
+}
+
+function moreItems(){return [
+  ['doctor','user',T('Meet the doctor','ڈاکٹر سے ملیں'),T('About Dr. Tahira Tanweer','ڈاکٹر طاہرہ تنویر کا تعارف')],
+  ['prices','tag',T('Prices','قیمتیں'),T('Treatment fees and how to get a quote','علاج کی فیس اور قیمت معلوم کرنے کا طریقہ')],
+  ['emergency','alert',T('Dental emergency help','دانتوں کی ایمرجنسی میں مدد'),T('What to do before you reach the clinic','کلینک پہنچنے سے پہلے کیا کریں')],
+  ['care','heart',T('Everyday tooth care','دانتوں کی روزمرہ دیکھ بھال'),T('Habits that keep teeth healthy','دانتوں کو صحت مند رکھنے کی عادات')],
+  ['aftercare','clip',T('After your treatment','علاج کے بعد'),T('Care after fillings, extractions and more','فلنگ، دانت نکلوانے اور دیگر علاج کے بعد احتیاط')],
+  ['faq','help',T('Questions and answers','سوالات و جوابات'),T('Booking, first visits and costs','بکنگ، پہلی ملاقات اور اخراجات')],
+  ['reviews','star',T('Ratings and feedback','ریٹنگ اور رائے'),T('What patients say and how to share feedback','مریض کیا کہتے ہیں اور اپنی رائے کیسے دیں')],
+  ['contact','pin',T('Contact and opening hours','رابطہ اور اوقاتِ کار'),T('Call, message and find the clinic','کال کریں، پیغام بھیجیں اور کلینک تلاش کریں')],
+  ['privacy','shield',T('Your privacy','آپ کی پرائیویسی'),T('How your details are handled','آپ کی معلومات کیسے سنبھالی جاتی ہیں')]
+]}
+function vMore(){
+  return '<h1 class="pgt" tabindex="-1">'+T('More','مزید')+'</h1><div class="list">'+moreItems().map(function(m){return '<button class="row" data-a="go" data-v="'+m[0]+'"><span class="bub'+(m[0]==='emergency'?' em':'')+'">'+ic(m[1])+'</span><span class="grow"><span class="rt">'+m[2]+'</span><span class="rp">'+m[3]+'</span></span>'+ic('right')+'</button>'}).join('')+'</div>';
+}
+function contactButtons(){
+  return '<div class="hero-actions">'+A(telHref,'btn',ic('phone')+callLabel())+A(wa(T('Hello, I have a question about a dental visit.','السلام علیکم، مجھے دانتوں کے معائنے کے بارے میں ایک سوال پوچھنا ہے۔')),'btn ghost',ic('chat')+T('WhatsApp','واٹس ایپ'),true)+A(mapsHref,'btn ghost',ic('pin')+T('Directions','راستہ'),true)+'</div>';
+}
+function vDoctor(){
+  var D=CONFIG.doctor,paras=LX(D.bio),rows=[];
+  var exp=PL(D.experience),reg=PL(D.registration),langs=LX(D.languages),quals=LX(D.qualifications),focus=LX(D.focus);
+  if(exp)rows.push([T('Experience','تجربہ'),exp]);
+  if(reg)rows.push([T('Registration','رجسٹریشن'),reg]);
+  if(langs.length)rows.push([T('Languages','زبانیں'),langs.join(T(', ','، '))]);
+  return subHead(T('Meet the doctor','ڈاکٹر سے ملیں'))+
+    '<div class="doc">'+avatarHtml()+'<div><h2>'+esc(PL(D.name))+'</h2><p class="hint">'+esc(PL(D.title))+'</p></div></div>'+
+    '<h2 class="mt2">'+T('About','تعارف')+'</h2>'+paras.map(function(p){return '<p class="mt">'+esc(p)+'</p>'}).join('')+
+    (quals.length?'<h2 class="mt2">'+T('Qualifications','تعلیمی قابلیت')+'</h2>'+ul(quals):'')+
+    (focus.length?'<h2 class="mt2">'+T('Areas of focus','دلچسپی اور مہارت کے شعبے')+'</h2>'+ul(focus):'')+
+    (rows.length?'<div class="list mt2"><dl class="sum">'+rows.map(function(r){return '<div><dt>'+r[0]+'</dt><dd>'+esc(r[1])+'</dd></div>'}).join('')+'</dl></div>':'')+
+    '<h2 class="mt2">'+T('Fees','فیس')+'</h2><p class="mt">'+esc(PL(CONFIG.fees.note))+'</p><div class="list mt">'+consultRow()+SERVICES.filter(function(s){return ['checkup','cleaning','filling','rct','whitening'].indexOf(s.id)>=0}).map(svcFeeRow).join('')+'</div>'+
+    '<div class="mt"><button class="btn ghost block" data-a="go" data-v="prices">'+ic('tag')+T('See the full price list','قیمتوں کی مکمل فہرست دیکھیں')+'</button></div>'+
+    '<div class="mt2"><button class="btn block" data-a="go" data-v="book">'+ic('cal')+T('Book an appointment','اپائنٹمنٹ بک کریں')+'</button></div><div class="mt2">'+contactButtons()+'</div>';
+}
+function vPrices(){
+  var h=subHead(T('Prices','قیمتیں'))+'<p>'+esc(PL(CONFIG.fees.note))+'</p><div class="list mt">'+consultRow()+'</div>';
+  h+=CATS.map(function(c){
+    return '<div class="gt">'+esc(PL(CATEGORIES[c]))+'</div><div class="list">'+SERVICES.filter(function(s){return s.cat===c}).map(svcFeeRow).join('')+'</div>';
+  }).join('');
+  return h+'<div class="mt2"><button class="btn block" data-a="go" data-v="book">'+ic('cal')+T('Book an appointment','اپائنٹمنٹ بک کریں')+'</button></div><div class="mt2">'+contactButtons()+'</div>';
+}
+
+var EMERGENCY=[
+  {t:['Severe toothache','شدید دانت درد'],l:[
+    ['Rinse your mouth with warm water.','Gently clean between the teeth to remove trapped food.','Hold a cold pack against your cheek for short periods.','Take pain relief only as directed on the label. Do not place tablets against the gum.','Call the clinic. Pain that does not settle needs to be seen.'],
+    ['نیم گرم پانی سے کلی کریں۔','دانتوں کے درمیان پھنسا ہوا کھانا آہستگی سے صاف کریں۔','گال پر تھوڑی تھوڑی دیر کے لیے ٹھنڈی پٹی یا برف کی تھیلی رکھیں۔','درد کی دوا صرف ڈبے پر لکھی ہدایت کے مطابق لیں۔ گولی کو مسوڑھے کے ساتھ نہ رکھیں۔','کلینک کو کال کریں۔ جو درد کم نہ ہو اسے ڈاکٹر کو دکھانا ضروری ہے۔']]},
+  {t:['Knocked-out adult tooth','چوٹ سے گرا ہوا بالغ دانت'],l:[
+    ['Pick it up by the crown (the chewing part), not the root.','If it is dirty, rinse it gently with water. Do not scrub it.','If you can, place it back in the socket and hold it there. Otherwise keep it in milk.','See a dentist as fast as you can, ideally within an hour. Do not put a baby tooth back in.'],
+    ['دانت کو اوپر والے حصے (چبانے والے حصے) سے پکڑیں، جڑ سے نہیں۔','اگر گندا ہو تو پانی سے آہستہ دھو لیں۔ رگڑیں نہیں۔','ممکن ہو تو اسے واپس اپنی جگہ پر رکھ کر تھامے رکھیں۔ ورنہ دودھ میں رکھیں۔','جتنی جلدی ہو ڈینٹسٹ کے پاس پہنچیں، بہتر ہے ایک گھنٹے کے اندر۔ دودھ کا دانت واپس نہ لگائیں۔']]},
+  {t:['Broken or chipped tooth','ٹوٹا ہوا یا چپکا ہوا دانت'],l:[
+    ['Rinse your mouth and save any pieces.','Use a cold pack to reduce swelling.','Cover a sharp edge with dental wax or sugar-free gum.','Book a visit soon so the tooth can be protected.'],
+    ['منہ کی کلی کریں اور ٹوٹے ہوئے ٹکڑے سنبھال لیں۔','سوجن کم کرنے کے لیے ٹھنڈی پٹی رکھیں۔','تیز کنارے کو ڈینٹل ویکس یا بغیر چینی والے چیونگم سے ڈھانپ دیں۔','جلد اپائنٹمنٹ لیں تاکہ دانت کو محفوظ بنایا جا سکے۔']]},
+  {t:['Bleeding after an extraction','دانت نکلوانے کے بعد خون بہنا'],l:[
+    ['Bite firmly on clean gauze or a folded cloth for 30 minutes without checking.','Sit upright and avoid rinsing or spitting hard.','If it is still bleeding after two rounds, call the clinic.'],
+    ['صاف گیز یا تہہ کیے ہوئے صاف کپڑے کو 30 منٹ تک مضبوطی سے دبا کر رکھیں، بیچ میں ہٹا کر نہ دیکھیں۔','سیدھے بیٹھیں اور زور سے کلی یا تھوکنے سے پرہیز کریں۔','اگر دو بار کوشش کے بعد بھی خون بہہ رہا ہو تو کلینک کو کال کریں۔']]},
+  {t:['Lost filling or crown','فلنگ یا کراؤن نکل جانا'],l:[
+    ['Keep the crown or piece safe and bring it with you.','Avoid chewing on that side.','A pharmacy dental cement can hold a crown in place until your visit.'],
+    ['کراؤن یا ٹکڑا سنبھال کر رکھیں اور ساتھ لائیں۔','اس طرف سے چبانے سے پرہیز کریں۔','فارمیسی سے ملنے والا ڈینٹل سیمنٹ ملاقات تک کراؤن کو جگہ پر رکھ سکتا ہے۔']]}
+];
+var CARE=[
+  {t:['Brushing and cleaning between teeth','برش کرنا اور دانتوں کے درمیان صفائی'],l:[
+    ['Brush twice a day for two minutes with a fluoride toothpaste.','Clean between your teeth once a day with floss or interdental brushes.','Spit out toothpaste after brushing. Do not rinse straight away.','Change your toothbrush every three months, or sooner if the bristles fray.'],
+    ['دن میں دو بار، دو منٹ تک فلورائیڈ والے ٹوتھ پیسٹ سے برش کریں۔','دن میں ایک بار فلاس یا انٹر ڈینٹل برش سے دانتوں کے درمیان صفائی کریں۔','برش کے بعد ٹوتھ پیسٹ تھوک دیں۔ فوراً پانی سے کلی نہ کریں۔','ٹوتھ برش ہر تین ماہ بعد بدلیں، یا بال خراب ہو جائیں تو جلد بدل لیں۔']]},
+  {t:['Food and drink','کھانا پینا'],l:[
+    ['Sugary snacks and drinks cause the most damage when they are frequent, so keep them to mealtimes.','Water is the best drink between meals.','Fizzy drinks, juices and sweet tea wear down enamel.'],
+    ['میٹھی چیزیں اور مشروبات بار بار لینے سے سب سے زیادہ نقصان ہوتا ہے، اس لیے انہیں کھانے کے اوقات تک محدود رکھیں۔','کھانوں کے درمیان پانی بہترین مشروب ہے۔','کولڈ ڈرنکس، جوس اور میٹھی چائے دانت کی اوپری تہہ (اینیمل) کو کمزور کرتے ہیں۔']]},
+  {t:['Paan, gutka, naswar and smoking','پان، گٹکا، نسوار اور سگریٹ نوشی'],l:[
+    ['Chewing tobacco, paan with tobacco, gutka and smoking raise the risk of gum disease and mouth cancer.','See a dentist about any white or red patch, or ulcer that lasts more than two weeks.','Ask the clinic for help to cut down or quit.'],
+    ['تمباکو چبانا، تمباکو والا پان، گٹکا اور سگریٹ نوشی مسوڑھوں کی بیماری اور منہ کے کینسر کا خطرہ بڑھاتے ہیں۔','منہ میں کوئی سفید یا سرخ دھبہ یا چھالا دو ہفتے سے زیادہ رہے تو ڈینٹسٹ کو دکھائیں۔','چھوڑنے یا کم کرنے کے لیے کلینک سے مدد لیں۔']]},
+  {t:['Children\u2019s teeth','بچوں کے دانت'],l:[
+    ['Start brushing when the first tooth appears.','Use a smear of fluoride toothpaste for young children and supervise brushing.','Avoid putting a child to bed with a bottle of milk or juice.','Take children for regular check-ups.'],
+    ['پہلا دانت نکلتے ہی برش کرانا شروع کریں۔','چھوٹے بچوں کے لیے فلورائیڈ ٹوتھ پیسٹ بہت تھوڑی مقدار میں لیں اور برش کے وقت نگرانی کریں۔','بچے کو دودھ یا جوس کی بوتل کے ساتھ سلانے سے پرہیز کریں۔','بچوں کا باقاعدہ معائنہ کرائیں۔']]},
+  {t:['How often to see a dentist','ڈینٹسٹ کے پاس کتنی بار جائیں'],l:[
+    ['Most people benefit from a check-up and clean about every six months.','Your dentist may suggest visits more often if you have gum disease, braces or other needs.','Book sooner if you have pain, bleeding gums, swelling or a loose tooth.'],
+    ['اکثر لوگوں کے لیے تقریباً ہر چھ ماہ بعد معائنہ اور صفائی فائدہ مند ہے۔','اگر مسوڑھوں کی بیماری ہو، بریسز لگے ہوں یا دیگر ضروریات ہوں تو ڈینٹسٹ زیادہ بار آنے کا مشورہ دے سکتا ہے۔','درد، مسوڑھوں سے خون، سوجن یا ہلتا ہوا دانت ہو تو جلد اپائنٹمنٹ لیں۔']]}
+];
+var AFTERCARE=[
+  {t:['After a tooth extraction','دانت نکلوانے کے بعد'],l:[
+    ['Bite on gauze for 30 to 45 minutes.','For the first 24 hours avoid rinsing hard, spitting, drinking through a straw and smoking.','Eat soft, cool foods and chew on the other side.','Use a cold pack on your cheek to reduce swelling.','Call the clinic if bleeding, pain or swelling gets worse after a few days.'],
+    ['گیز کو 30 سے 45 منٹ تک دانتوں سے دبا کر رکھیں۔','پہلے 24 گھنٹے زور سے کلی کرنے، تھوکنے، اسٹرا سے پینے اور سگریٹ نوشی سے پرہیز کریں۔','نرم اور ٹھنڈا کھانا کھائیں اور دوسری طرف سے چبائیں۔','سوجن کم کرنے کے لیے گال پر ٹھنڈی پٹی رکھیں۔','اگر چند دن بعد خون، درد یا سوجن بڑھ جائے تو کلینک کو کال کریں۔']]},
+  {t:['After a filling','فلنگ کے بعد'],l:[
+    ['Wait until the numbness wears off before eating, so you do not bite your cheek or tongue.','Mild sensitivity to hot and cold is common for a few days.','Call the clinic if your bite feels high or the tooth stays painful.'],
+    ['کھانے سے پہلے سن پن ختم ہونے کا انتظار کریں تاکہ گال یا زبان نہ کٹ جائے۔','چند دن تک ٹھنڈا گرم ہلکا سا لگنا عام بات ہے۔','اگر دانت اونچا لگے یا درد برقرار رہے تو کلینک کو کال کریں۔']]},
+  {t:['During and after root canal treatment','روٹ کینال کے دوران اور بعد میں'],l:[
+    ['The tooth can feel tender for a few days. Avoid chewing hard food on it.','Take any medicines exactly as prescribed.','Return for the permanent filling or crown. Leaving it unfinished puts the tooth at risk.'],
+    ['چند دن دانت میں حساسیت رہ سکتی ہے۔ اس پر سخت چیز نہ چبائیں۔','ادویات بالکل ہدایت کے مطابق لیں۔','مستقل فلنگ یا کراؤن کے لیے واپس آئیں۔ علاج ادھورا چھوڑنے سے دانت خطرے میں پڑ سکتا ہے۔']]},
+  {t:['After teeth whitening','دانتوں کی سفیدی کے بعد'],l:[
+    ['Avoid tea, coffee, cola and smoking for the first 48 hours.','Some sensitivity is normal and usually settles quickly.','Ask about a sensitivity toothpaste if you need one.'],
+    ['پہلے 48 گھنٹے چائے، کافی، کولا اور سگریٹ نوشی سے پرہیز کریں۔','کچھ حساسیت عام بات ہے اور عموماً جلد ٹھیک ہو جاتی ہے۔','ضرورت ہو تو حساسیت والے ٹوتھ پیسٹ کے بارے میں پوچھیں۔']]},
+  {t:['Caring for braces','بریسز کی دیکھ بھال'],l:[
+    ['Brush after every meal and clean around each bracket.','Avoid hard and sticky foods.','Use orthodontic wax on any wire that rubs.','Keep your adjustment appointments.'],
+    ['ہر کھانے کے بعد برش کریں اور ہر بریکٹ کے گرد صفائی کریں۔','سخت اور چپکنے والی چیزوں سے پرہیز کریں۔','کوئی تار چبھے تو اس پر آرتھوڈانٹک ویکس لگائیں۔','ایڈجسٹمنٹ کی اپائنٹمنٹس پر ضرور آئیں۔']]}
+];
+function vEmergency(){
+  return subHead(T('Dental emergency help','دانتوں کی ایمرجنسی میں مدد'))+
+    '<div class="alert"><p><b>'+T('Go to the nearest hospital emergency department right away','فوراً قریبی ہسپتال کے ایمرجنسی ڈیپارٹمنٹ جائیں')+'</b> '+T('if you have swelling spreading to your face or neck, trouble breathing or swallowing, or bleeding that will not stop.','اگر چہرے یا گردن تک سوجن پھیل رہی ہو، سانس لینے یا نگلنے میں دشواری ہو، یا خون نہ رک رہا ہو۔')+'</p></div>'+
+    '<p class="mt">'+T('For any other dental emergency, call the clinic first.','دانتوں کی کسی اور ایمرجنسی میں پہلے کلینک کو کال کریں۔')+'</p><div class="mt">'+contactButtons()+'</div><div class="sec">'+accList(EMERGENCY)+'</div>'+
+    '<p class="hint mt2">'+T('This is general first-aid guidance and does not replace advice from a dentist.','یہ عمومی ابتدائی طبی رہنمائی ہے اور ڈینٹسٹ کے مشورے کا متبادل نہیں۔')+'</p>';
+}
+function vCare(){return subHead(T('Everyday tooth care','دانتوں کی روزمرہ دیکھ بھال'))+accList(CARE)}
+function vAftercare(){
+  return subHead(T('After your treatment','علاج کے بعد'))+
+    '<p class="hint">'+T('Always follow the instructions your dentist gives you. These notes are general.','ہمیشہ اپنے ڈینٹسٹ کی ہدایات پر عمل کریں۔ یہ نکات عمومی ہیں۔')+'</p><div class="mt">'+accList(AFTERCARE)+'</div>';
+}
+function vFaq(){
+  var F=[
+    [T('How does booking work?','بکنگ کیسے کام کرتی ہے؟'),T('Choose a service and a time, add your details, then send the request to the clinic on WhatsApp. The clinic replies to confirm the time or to suggest another one.','سروس اور وقت منتخب کریں، اپنی تفصیل لکھیں، پھر درخواست واٹس ایپ پر کلینک کو بھیج دیں۔ کلینک وقت کی تصدیق کے لیے جواب دیتا ہے یا کوئی اور وقت بتاتا ہے۔')],
+    [T('Is my visit confirmed when I send the request?','کیا درخواست بھیجتے ہی ملاقات کنفرم ہو جاتی ہے؟'),T('No. A time is confirmed only when the clinic replies. Until then the visit shows as waiting. You can tap Clinic confirmed on the visit once you hear back.','نہیں۔ وقت تب کنفرم ہوتا ہے جب کلینک جواب دے۔ تب تک ملاقات انتظار میں دکھائی جاتی ہے۔ جواب ملنے پر آپ ملاقات پر کلینک نے تصدیق کر دی کا بٹن دبا سکتے ہیں۔')],
+    [T('What should I bring to my first visit?','پہلی ملاقات پر کیا ساتھ لائیں؟'),T('Any earlier dental X-rays or reports, a list of medicines you take, and details of any allergies. If you are booking for a child, please come with a parent or guardian.','پرانے ڈینٹل ایکسرے یا رپورٹس، آپ جو ادویات لیتے ہیں ان کی فہرست، اور کسی الرجی کی تفصیل۔ بچے کی بکنگ ہو تو والدین یا سرپرست ساتھ آئیں۔')],
+    [T('Can I change or cancel a visit?','کیا ملاقات بدلی یا منسوخ کی جا سکتی ہے؟'),T('Yes. Open My visits, choose Reschedule or Cancel, then message the clinic so they know. Please tell them as early as you can.','جی ہاں۔ میری ملاقاتیں کھول کر وقت بدلیں یا منسوخ کریں چنیں، پھر کلینک کو پیغام بھیج دیں تاکہ انہیں معلوم ہو۔ براہِ مہربانی جتنی جلدی ہو سکے بتا دیں۔')],
+    [T('Will treatment hurt?','کیا علاج میں درد ہوگا؟'),T('For most treatments the dentist numbs the area first, so you should feel pressure but not pain. Tell your dentist straight away if something hurts.','اکثر علاج سے پہلے متعلقہ جگہ کو سن کر دیا جاتا ہے، اس لیے آپ کو دباؤ محسوس ہو سکتا ہے مگر درد نہیں ہونا چاہیے۔ کچھ بھی درد کرے تو فوراً ڈینٹسٹ کو بتائیں۔')],
+    [T('How much will it cost?','خرچ کتنا آئے گا؟'),T('Fees depend on the treatment. Call or message the clinic for prices before you book.','فیس علاج کے مطابق ہوتی ہے۔ بک کرنے سے پہلے کلینک کو کال کریں یا پیغام بھیج کر قیمت معلوم کر لیں۔')],
+    [T('Where are my details stored?','میری تفصیلات کہاں محفوظ ہوتی ہیں؟'),T('On this device only, so booking is quicker next time. You can erase them at any time from My visits.','صرف اسی ڈیوائس پر، تاکہ اگلی بار بکنگ جلدی ہو۔ آپ کسی بھی وقت میری ملاقاتیں سے انہیں مٹا سکتے ہیں۔')]
+  ];
+  return subHead(T('Questions and answers','سوالات و جوابات'))+F.map(function(f){return acc(f[0],'<p>'+esc(f[1])+'</p>')}).join('');
+}
+function fbMsg(){return T('Feedback for '+CONFIG.name[0]+':\n'+state.fb,CONFIG.name[1]+' کے لیے رائے:\n'+state.fb)}
+function vReviews(){
+  var stars='';for(var i=0;i<5;i++)stars+=ic('star','fill');
+  return subHead(T('Ratings and feedback','ریٹنگ اور رائے'))+
+    '<div class="rate"><div class="bigrate">'+CONFIG.rating.toFixed(1)+'</div><div><div class="stars" role="img" aria-label="'+T(CONFIG.rating+' out of 5 stars','5 میں سے '+CONFIG.rating+' ستارے')+'">'+stars+'</div><p class="hint">'+T('Based on '+CONFIG.reviewCount+' reviews','بنیاد: '+CONFIG.reviewCount+' جائزے')+'</p></div></div>'+
+    '<div class="mt2">'+A(mapsHref,'btn block',ic('star')+T('Read and write reviews on Google Maps','گوگل میپس پر جائزے پڑھیں اور لکھیں'),true)+'</div>'+
+    '<section class="sec"><h2>'+T('Send feedback to the clinic','کلینک کو اپنی رائے بھیجیں')+'</h2><div class="field mt"><label for="fb">'+T('Your message','آپ کا پیغام')+'</label><textarea id="fb" data-f="fb" placeholder="'+T('Tell the clinic about your visit','کلینک کو اپنی ملاقات کے بارے میں بتائیں')+'">'+esc(state.fb)+'</textarea></div>'+
+    A(wa(fbMsg()),'btn ghost block',ic('chat')+T('Send on WhatsApp','واٹس ایپ پر بھیجیں'),true).replace('<a ','<a id="fb-link" ')+'</section>';
+}
+function vContact(){
+  var t=new Date().getDay(),order=[1,2,3,4,5,6,0],addr=PL(CONFIG.address);
+  return subHead(T('Contact and opening hours','رابطہ اور اوقاتِ کار'))+contactButtons()+
+    (addr?'<p class="mt2">'+esc(addr)+'</p>':'')+
+    '<section class="sec"><h2>'+T('Opening hours','اوقاتِ کار')+'</h2><div class="hours mt">'+order.map(function(i){var h=CONFIG.hours[i];return '<div'+(i===t?' class="today"':'')+'><span>'+dnl(i)+'</span><span>'+(h?T(t12(h[0])+' to '+t12(h[1]),t12(h[0])+' سے '+t12(h[1])+' تک'):T('Closed','بند'))+'</span></div>'}).join('')+'</div><p class="hint mt">'+T('Please call to confirm times, especially around public holidays.','براہِ مہربانی اوقات کی تصدیق کے لیے کال کریں، خاص طور پر سرکاری چھٹیوں کے آس پاس۔')+'</p></section>';
+}
+function vPrivacy(){
+  return subHead(T('Your privacy','آپ کی پرائیویسی'))+
+    '<p>'+T('Your visits and details are saved on this device only. This app does not keep them on a server.','آپ کی ملاقاتیں اور تفصیلات صرف اسی ڈیوائس پر محفوظ ہوتی ہیں۔ یہ ایپ انہیں کسی سرور پر نہیں رکھتی۔')+'</p><p class="mt">'+T('Your request reaches the clinic only when you choose to send it on WhatsApp or call. What you write in that message is shared with the clinic and with WhatsApp.','آپ کی درخواست کلینک تک تبھی پہنچتی ہے جب آپ اسے واٹس ایپ پر بھیجیں یا کال کریں۔ اس پیغام میں جو کچھ آپ لکھتے ہیں وہ کلینک اور واٹس ایپ کے ساتھ شیئر ہوتا ہے۔')+'</p><p class="mt">'+T('You can erase everything at any time from My visits.','آپ کسی بھی وقت میری ملاقاتیں سے سب کچھ مٹا سکتے ہیں۔')+'</p>';
+}
+
+var VIEWS={prices:vPrices,home:vHome,services:vServices,book:vBook,visits:vVisits,more:vMore,doctor:vDoctor,emergency:vEmergency,care:vCare,aftercare:vAftercare,faq:vFaq,reviews:vReviews,contact:vContact,privacy:vPrivacy};
+var MORE_SUB=['doctor','prices','emergency','care','aftercare','faq','reviews','contact','privacy'];
+function tabOf(v){return MORE_SUB.indexOf(v)>=0?'more':v}
+
+function buildTabs(){
+  var TABS=[['home','home',T('Home','ہوم')],['services','list',T('Services','خدمات')],['book','cal',T('Book','بک کریں')],['visits','clock',T('Visits','ملاقاتیں')],['more','more',T('More','مزید')]];
+  $('#tabs').setAttribute('aria-label',T('Main','مین مینو'));
+  $('#tabs').innerHTML=TABS.map(function(t){return '<button class="tab'+(t[0]==='book'?' cta':'')+'" data-a="go" data-v="'+t[0]+'" aria-label="'+t[2]+'"><span class="ib">'+ic(t[1])+'</span>'+t[2]+'</button>'}).join('');
+}
+function effectiveTheme(){return document.documentElement.getAttribute('data-theme')||(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}
+function paintChrome(){
+  var root=document.documentElement;
+  root.setAttribute('lang',lang);root.setAttribute('dir',lang==='ur'?'rtl':'ltr');
+  document.title=clinicName();
+  $('#brandName').textContent=PL(CONFIG.doctor.name);
+  $('#brandSub').textContent=T('Dental Practice','ڈینٹل پریکٹس');
+  $('#brandBtn').setAttribute('aria-label',T('Go to home','ہوم پر جائیں'));
+  $('#skip').textContent=T('Skip to content','مواد پر جائیں');
+  var lb=$('#langBtn');lb.textContent=lang==='ur'?'English':'اردو';lb.setAttribute('aria-label',lang==='ur'?'Switch to English':'اردو میں دیکھیں');lb.setAttribute('lang',lang==='ur'?'en':'ur');
+  var dark=effectiveTheme()==='dark',b=$('#themeBtn');
+  b.innerHTML=ic(dark?'sun':'moon');b.setAttribute('aria-label',dark?T('Switch to light mode','روشن موڈ پر جائیں'):T('Switch to dark mode','گہرا (ڈارک) موڈ پر جائیں'));
+  buildTabs();
+}
+
+function render(enter){
+  var app=$('#app');
+  app.innerHTML='<div class="view'+(enter?' enter':'')+'">'+VIEWS[state.view]()+'</div>';
+  var cur=tabOf(state.view);
+  document.querySelectorAll('.tab').forEach(function(b){b.setAttribute('aria-current',b.dataset.v===cur?'page':'false')});
+  if(enter){window.scrollTo(0,0);var h=app.querySelector('h1');if(h)h.focus({preventScroll:true})}
+}
+function go(v){
+  if(v==='book'&&state.draft.doneId)state.draft=newDraft();
+  state.errors={};state.confirmCancel=null;state.confirmClear=false;
+  state.view=v;
+  try{if(location.hash.slice(1)!==v)location.hash=v}catch(e){}
+  render(true);
+}
+function setLang(l){lang=l;store.set('dtd.lang',l);paintChrome();render(false)}
+
+/* ---------- toast ---------- */
+var tt;
+function toast(msg,isHtml){
+  var el=$('#toast');el.innerHTML=isHtml?msg:esc(msg);el.classList.add('on');
+  clearTimeout(tt);tt=setTimeout(function(){el.classList.remove('on')},5200);
+}
+
+/* ---------- appointments ---------- */
+function validateDetails(){
+  var d=state.draft,e={};
+  if(d.name.trim().length<2)e.name=T('Enter your name.','اپنا نام لکھیں۔');
+  var digits=d.phone.replace(/\D/g,'');
+  if(digits.length<10||digits.length>13)e.phone=T('Enter a phone number the clinic can reach, like 0300 1234567.','کلینک کے رابطے کے لیے فون نمبر لکھیں، جیسے 0300 1234567۔');
+  if(d.forWho==='other'&&d.patientName.trim().length<2)e.patientName=T('Enter the patient\u2019s name.','مریض کا نام لکھیں۔');
+  if(d.age.trim()&&!/^\d{1,3}$/.test(d.age.trim()))e.age=T('Enter the age in years, like 34.','عمر سالوں میں لکھیں، جیسے 34۔');
+  state.errors=e;
+  return !Object.keys(e).length;
+}
+function commit(sent){
+  var d=state.draft;
+  if(d.doneId)return;
+  var a=apptFromDraft();
+  a.id='a'+Date.now().toString(36);a.status='requested';a.created=Date.now();
+  if(d.reschedule){appts.forEach(function(x){if(x.id===d.reschedule)x.status='cancelled'})}
+  appts.push(a);store.set('dtd.appts',appts);
+  profile={name:a.name,phone:a.phone,age:a.forWho==='me'?a.age:(profile.age||'')};store.set('dtd.profile',profile);
+  d.doneId=a.id;d.sent=sent;
+}
+function startFrom(a,step){
+  var d=newDraft();
+  d.service=a.serviceId;d.name=a.name;d.phone=a.phone;d.age=a.age||'';d.forWho=a.forWho;d.patientName=a.patientName||'';d.ptype=a.ptype;
+  d.concerns=(a.concerns||[]).map(function(c){return CONCERNS.map(function(x){return x[0]}).indexOf(c)}).filter(function(i){return i>=0});
+  d.notes=a.notes||'';d.medical=a.medical||'';d.step=step;
+  return d;
+}
+function apptById(id){return appts.filter(function(y){return y.id===id})[0]}
+
+/* ---------- events ---------- */
+document.addEventListener('click',function(e){
+  var t=e.target.closest('[data-a]');if(!t)return;
+  var a=t.dataset.a,v=t.dataset.v,d=state.draft;
+  switch(a){
+    case 'go':go(v);break;
+    case 'lang':setLang(lang==='ur'?'en':'ur');break;
+    case 'theme':(function(){var next=effectiveTheme()==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',next);store.set('dtd.theme',next);paintChrome();render(false)})();break;
+    case 'homeDay':state.homeDate=v;render();break;
+    case 'quick':state.draft=newDraft();state.draft.date=state.homeDate;state.draft.time=v;go('book');break;
+    case 'quickMore':state.draft=newDraft();state.draft.date=state.homeDate;state.draft.step=1;go('book');break;
+    case 'bookSvc':state.draft=newDraft();state.draft.service=v;state.draft.step=2;go('book');break;
+    case 'pickSvc':d.service=v;d.step=2;render(true);break;
+    case 'pickDay':d.date=v;d.time=null;render();break;
+    case 'pickTime':d.time=v;render();break;
+    case 'stepBack':if(d.step>1){d.step--;state.errors={};render(true)}else go(d.reschedule?'visits':'home');break;
+    case 'stepNext':
+      if(d.step===2&&!(d.date&&d.time))break;
+      if(d.step===3&&!validateDetails()){render();var first=$('.err');if(first&&first.scrollIntoView)first.scrollIntoView({block:'center'});break}
+      d.step++;render(true);break;
+    case 'forWho':d.forWho=v;render();break;
+    case 'ptype':d.ptype=v;render();break;
+    case 'toggleConcern':(function(){var i=+v,k=d.concerns.indexOf(i);if(k>=0)d.concerns.splice(k,1);else d.concerns.push(i);render()})();break;
+    case 'send':commit(true);setTimeout(function(){render(true)},250);break;
+    case 'saveOnly':commit(false);render(true);break;
+    case 'visitsTab':state.visitsTab=v;state.confirmCancel=null;render();break;
+    case 'cancelAsk':state.confirmCancel=v;render();break;
+    case 'cancelNo':state.confirmCancel=null;render();break;
+    case 'cancelYes':(function(){var x=apptById(v);if(x){x.status='cancelled';store.set('dtd.appts',appts);state.confirmCancel=null;render();var m=T('Hello, I need to cancel my dental appointment on '+dayLong(x.date)+', '+t12(x.time)+' ('+x.service+').','السلام علیکم، مجھے '+dayLong(x.date)+'، '+t12(x.time)+' کی اپنی اپائنٹمنٹ ('+svcOfAppt(x)+') منسوخ کرنی ہے۔');toast(T('Visit cancelled.','ملاقات منسوخ ہو گئی۔')+' <a href="'+wa(m)+'" target="_blank" rel="noopener">'+T('Tell the clinic on WhatsApp','واٹس ایپ پر کلینک کو بتائیں')+'</a>',true)}})();break;
+    case 'confirmed':(function(){var x=apptById(v);if(x){x.status='confirmed';store.set('dtd.appts',appts);render()}})();break;
+    case 'resched':(function(){var x=apptById(v);if(x){state.draft=startFrom(x,2);state.draft.reschedule=x.id;go('book')}})();break;
+    case 'again':(function(){var x=apptById(v);if(x){state.draft=startFrom(x,2);go('book')}})();break;
+    case 'saveProfile':(function(){profile={name:$('#pf-name').value.trim(),phone:$('#pf-phone').value.trim(),age:$('#pf-age').value.trim()};store.set('dtd.profile',profile);if(!state.draft.doneId){state.draft.name=profile.name;state.draft.phone=profile.phone;state.draft.age=profile.age}toast(T('Details saved on this device.','تفصیل اس ڈیوائس پر محفوظ ہو گئی۔'))})();break;
+    case 'clearAsk':state.confirmClear=true;render();break;
+    case 'clearNo':state.confirmClear=false;render();break;
+    case 'clearYes':appts=[];profile={name:'',phone:'',age:''};store.del('dtd.appts');store.del('dtd.profile');state.draft=newDraft();state.confirmClear=false;render();toast(T('Your data was erased from this device.','آپ کا ڈیٹا اس ڈیوائس سے مٹا دیا گیا۔'));break;
+    case 'cat':state.cat=v;render();break;
+  }
+});
+document.addEventListener('input',function(e){
+  var f=e.target.dataset&&e.target.dataset.f;if(!f)return;
+  var v=e.target.value;
+  if(f==='q'){state.q=v;var l=$('#svc-list');if(l)l.innerHTML=svcRows(filtered());return}
+  if(f==='fb'){state.fb=v;var k=$('#fb-link');if(k)k.href=wa(fbMsg());return}
+  state.draft[f]=v;
+});
+window.addEventListener('hashchange',function(){
+  var v=(location.hash||'').slice(1);
+  if(VIEWS[v]&&v!==state.view){state.view=v;render(true)}
+});
+
+/* ---------- start ---------- */
+$('#logo-path').setAttribute('d',TOOTH);
+if(theme==='light'||theme==='dark')document.documentElement.setAttribute('data-theme',theme);
+var savedLang=store.get('dtd.lang',null);
+if(savedLang==='ur'||savedLang==='en')lang=savedLang;
+else{try{if(/^ur/i.test(navigator.language||''))lang='ur'}catch(e){}}
+paintChrome();
+try{var h0=(location.hash||'').slice(1);if(VIEWS[h0])state.view=h0}catch(e){}
+render(false);
+})();
+</script>
+</body>
+</html>
